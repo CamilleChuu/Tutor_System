@@ -48,7 +48,7 @@ def test():
         return str(e)
 
 @app.route('/test_mongo_uri')
-def test():
+def test_mongo_uri():
     try:
         mongo_uri = os.getenv("MONGODB_URI")
         return f"MongoDB URI: {mongo_uri}"
