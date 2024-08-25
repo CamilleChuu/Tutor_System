@@ -47,6 +47,14 @@ def test():
     except Exception as e:
         return str(e)
 
+@app.route('/test_mongo_uri')
+def test():
+    try:
+        mongo_uri = os.getenv("MONGODB_URI")
+        return f"MongoDB URI: {mongo_uri}"
+    except Exception as e:
+        return str(e)
+    
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     data = request.json
