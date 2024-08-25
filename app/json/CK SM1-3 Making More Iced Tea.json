@@ -1,0 +1,33 @@
+{"Making More Iced Tea": {
+  "Introduction":["In this activity, we will continue to compare the sweetness of iced tea."],
+  "Stage1": {
+  "Prompt":[
+    "openNewImage(./static/images/image-CKSM1/CKSM1.3.2.a_Making_More_Iced_Tea.png)",
+    "In the figure, the red and blue pitchers represent two batches of sweetened iced tea made using the <i>same</i> recipe. Michael decided to make more sweetened iced tea using the <i>same</i> recipe and poured one cup in the red pitcher and two cups in the blue pitcher.", 
+    "Compare the taste of sweetness of the iced tea in the red and blue pitchers after Michael added more sweetened iced tea to each pitcher. Explain your answer."
+  ],
+  "Expectation1":{
+    "Expectation":"The taste of sweetness depends on the amount of sugar per liquid.",
+    "Hint1":"Remember that both pitchers originally contained different amounts of sweetened iced tea made using the same recipe. What determines the sweetness of iced tea in each pitcher?",
+    "Hint2":"Do you think the sweetness of iced tea depends on how much sugar is in each pitcher or how much sugar per one unit of liquid in each pitcher?"
+  },
+  "Expectation2":{
+    "Expectation":"Both pitchers will have the same sweetness because the added iced tea has the same taste (i.e., the same ratio of sugar to liquid) as the original one.",
+    "Hint1":"Recall that the sweetened iced tea Michael added to the original red and blue pitchers was made using the same recipe. Would the taste of sweetness in both pitchers be the same after adding more of the same recipe of sweetened iced tea to each? Explain your reasoning.",
+    "Hint2": [
+      "Let's assume there were 50 grams of sugar and 5 cups of liquid in the red pitcher and there were 20 grams of sugar and 2 cups of liquid in the blue pitcher. Let's also assume that when Michael was making more tea, one cup of sweetened iced tea had 10 grams of sugar and 1 cup of liquid. If Michael adds one cup of sweetened iced tea to the red pitcher and two cups to the blue pitcher, compute the new amounts of sugar and liquid for each pitcher using the calculator.",
+      "openPopupCalculator()",
+      "Now, you have computed that there is 60 grams of sugar and 6 cups of liquid in the red pitcher and 40 grams of sugar and 4 cups of liquid in the blue pitcher. What can you say about the amount of sugar per one cup of liquid in the red and blue pitchers now compared to that in the original iced tea? What does this tell you about the taste of the sweetened iced tea in both pitchers?"
+    ]
+  }
+  },
+  "Closing":[
+    "openNewImage(./static/images/image-CKSM1/CKSM1.3.3.a_Making_More_Iced_Tea.png)",
+    "The amount of sugar per liquid determines the sweetness of iced tea. Originally, the red and blue pitchers contained iced tea that was made with the same recipe, meaning that the amount of sugar per liquid was the same. The newly added iced tea is also made with the same recipe and will not change the ratio of sugar to liquid in each pitcher. That is why both pitchers tasted the same even after adding more cups of iced tea. As you see in this activity, the taste of sweetness does not depend on the amount of liquid or sugar independently; rather, it depends on how much sugar is there for a fixed amount of liquid."
+  ],
+  "Summary Content": [
+    "The taste of sweetness depends on the amount of sugar per liquid.",
+    "Both pitchers will have the same sweetness because the added iced tea has the same taste (i.e., the same ratio of sugar to liquid) as the original one."
+  ]
+  }
+}

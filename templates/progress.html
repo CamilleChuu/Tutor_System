@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <title>Learn Progress</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/template.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/progress.css') }}">
+    <script src="{{ url_for('static', filename='js/template.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/register.js') }}"></script>
+    <!-- <script>window.onload = updateUsername;</script>
+    <script>window.onload = getProgress;</script> -->
+    <script>
+        window.onload = function() {
+            updateUsername();
+            getProgress();
+            setupEventHandlers();
+    };
+    </script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="row" style="width: 100%;">
+        <p id='title' style="margin-left: 5%; margin-right: 5%; color: white; font-size: 20px; display: inline-block;" >Tutor System Demo: Progress</p> 
+        <p id="user-display"  style="margin-left: 5%; margin-right: 5%; color: white; font-size: 15px; display: inline-block;"> Account:</p>
+    </div>
+    </div>
+
+    <div style="margin-left: 5%; margin-right: 5%;" class="container2">
+            <p><span class="green-dot"></span> = completed question; <span class="red-dot"></span> = uncompleted question; <a onclick = "Logout()"><button>Logout</button></a></p>
+            <!-- <a onclick = "navigateToPage2()"><button>(placeholder)</button></a> -->
+            <div class="item" question-name="Comparing Dimensions"><span>CK SM1-1 Comparing Dimensions</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Making Iced Tea"><span>CK SM1-2 Making Iced Tea</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Making More Iced Tea"><span>CK SM1-3 Making More Iced Tea</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Mixing Paint"><span>CK SM1-4 Mixing Paint</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <!-- <div class="item" question-name="Reflection Activity"><span><del>CK SM1-5 Reflection Activity</del></span><span class="red-dot"></span><button>Learn</button></div><br> -->
+            <div class="item" question-name="Choosing Paint Mixtures"><span><del>CK SM2-1 Choosing Paint Mixtures</del></span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Tracking Gasoline Prices"><span><del>CK SM2-2 Tracking Gasoline Prices</del></span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Planetary Weight"><span><del>CK SM2-3 Planetary Weight</del></span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Making Punch"><span><del>CK SM2-4 Making Punch</del></span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Speed Walking"><span><del>CK SM2-5 Speed Walking</del></span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Speed Walking Revisited"><span><del>CK SM2-6 Speed Walking Revisited</del></span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Stacking Paper"><span><del>CK SM2-7 Stacking Paper</del></span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Building Buses"><span>CK SM4-1 Building Buses</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Filling the Tub"><span>CK SM4-2 Filling the Tub</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Building a House"><span>CK SM4-3 Building a House</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Building a Neighborhood"><span>CK SM4-4 Building a Neighborhood</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Using Candles"><span>CK SM4-5 Using Candles</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Using More Candles"><span>CK SM4-6 Using More Candles</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <div class="item" question-name="Auctioning Paintings"><span>CK SM4-7 Auctioning Paintings</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+            <!-- <div class="item" question-name="Reflection Activity"><span><del>CK SM4-8 Reflection Activity</del></span><span class="red-dot"></span><button>Learn</button></div><br> -->
+            <div class="item" question-name="Classroom Demographics"><span>CK SM3-1 Classroom Demographics</span><span class="red-dot"></span><button onclick="navigateToPage2()">Learn</button></div><br>
+    </div>
+</body>
+</html>

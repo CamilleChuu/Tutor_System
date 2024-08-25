@@ -1,0 +1,27 @@
+{
+    "Speed Walking Revisited": {
+        "Introduction": [
+            "In this activity, we will use tables to determine proportional and non-proportional situations."
+        ],
+        "Stage1": {
+            "Prompt": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-6.2.a.i_Speed_Walking_Revisited.png)",
+                "Brian, Chloe, and Heather decided to time themselves as they raced 36 meters down the street. The following tables represent some of the data describing the relationship between total distances and elapsed times for the 36-meter race. Based on the tables, which of the relationships between total distance and elapsed time for Brian, Chloe, and Heather is proportional? Explain your answer."
+            ],
+            "Expectation1": {
+                "Expectation": "The relationship between total distance and elapsed time is proportional for Brian and Chloe, but not for Heather.",
+                "Hint1": "Let’s examine the tables to determine the relationship between the total distance and elapsed time for Brian, Chloe, and Heather. What happens to the total distance as time passes? How much distance do they cover per second? Based on your answers to these questions, how would you describe the relationship between the two quantities for each person?",
+                "Hint2": "As you may have noticed, the relationship between elapsed time and total distance changes together. For the relationship to be proportional, the relationship between these two quantities should be multiplicatively invariant, meaning that the quotient of these quantities should remain constant. Consider whether their walking distance per second is the same at all time points. Using this information, what can you say about the proportionality for each person?",
+                "Hint3": "To determine if the ratio of elapsed time and total distance is constant for any values, use any ordered pairs from the table, such as (4, 5), (8, 10), and (12, 15), to find their quotients. For Brian, the quotient is consistently 5/4 for any values, indicating that the total distance is proportional to elapsed time. Using this information, consider the situations for Chloe and Heather, and revise your answer accordingly."
+            }
+        },
+        "Closing": [
+            "openNewImage(./static/images/image-CKSM2/CK-SM2-6.3.a_Speed_Walking_Revisited.png)",
+            "The values in a table can be used to identify the relationship between two quantities. In proportional situations, tables include equivalent ratios; thus, the quotient of the two quantities is constant."
+        ],
+        "Summary Content": [
+            "Tables are helpful representations to demonstrate the relationships between two quantities (i.e., how the two quantities vary together).",
+            "Ratio tables include equivalent ratios in which the two quantities have different values, but their quotient is constant (i.e., they have the same unit rate)."
+        ]
+    }
+}

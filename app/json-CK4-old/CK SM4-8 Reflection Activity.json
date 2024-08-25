@@ -1,0 +1,15 @@
+{"SM 4 Reflection Activity":{
+    "Introduction":"Let's take a moment to reflect on the activities from Submodule 4, Proportionality.",
+    "Stage1":{
+        "Prompt":[
+            "openNewImage(./static/images/image-SM4/SM4 Reflection Summary Image.png)",
+            "You just completed the fourth submodule in Content Knowledge. In this submodule, you worked on activities that highlighted using the key aspects of proportionality—covariance and invariance—to determine if a given relationship between two quantities is proportional. For a relationship between two quantities to be proportional, as one quantity changes, another quantity also changes. Also, the quotient of the two quantities is constant for any non-zero pairs of the two quantities.<br><br>As you reflect on the activities in this submodule, use the textbox to consider the following: (1) How would you describe the role of covariance and invariance to determine if a given situation is proportional? (2) How will you use this information in your teaching to support student understanding of ratios and proportional relationships?<br><br>Once you’ve finished your reflection, hit submit.",
+            "openTextEditor()"
+        ],
+        "Options/Feedback":{
+            "Yes":"Next, you will complete the submodule assessment, \"Proportionality Assessment.\" <br><br> Then you will move on to the next submodule, \"Putting It All Together.\"",
+            "No":"Next, you will complete the submodule assessment, \"Proportionality Assessment.\" <br><br> Then you will move on to the next submodule, \"Putting It All Together.\" <br><br> If you'd like to record your reflection again, restart this activity from the submodule dashboard."
+        }
+    }
+    }
+}

@@ -1,0 +1,27 @@
+{"Using Candles":{
+    "Introduction":"In this activity, we will use the key aspects of proportionality to determine if a given situation is proportional.",
+    "Prompt":[
+        "You have two candles, Candle A and Candle B, that are lit at the same time and each is burning at a constant rate. When Candle A has burned 20mm in length, Candle B has burned 12mm in length. Is the relationship between the length that Candle A has burned to the length that Candle B has burned (or the decrease in the height of Candle A to the decrease in the height of Candle B as each candle is burning) proportional? Explain why or why not.",
+        "openNewImage(./static/images/image-SM4/Using Candles Intro Image.png)"
+    ],
+    "Expectation1":{
+        "Expectation":"As the length that Candle A has burned changes, the length that Candle B has burned also changes, meaning the two quantities covary.",
+        "Hint1":"Recall that the problem is investigating the type of relationship between the length that Candle A has burned and the length that Candle B has burned. If the length that Candle A has burned doubles or triples, what happens to the length that Candle B has burned? What does this tell you about the key aspects of proportionality?",
+        "Hint2":"Remember that when the length that Candle A has burned is 20mm, Candle B has also burned 12mm in length. If the length that Candle A has burned changes to 40mm, does the length that Candle B has burned also change? What does this tell you about the key aspects of proportionality?"
+    },
+    "Expectation2":{
+        "Expectation":"The length that Candle A has burned per the length that Candle B has burned is constant, indicating the quotient of any non-zero pairs of quantities is invariant.",
+        "Hint1":"We know that each candle is lit at the same time and is burning at a constant rate. Think about the length that Candle A has burned per the length that Candle B has burned. What can you say about the ratio of the length that Candle A has burned to the length that Candle B has burned, for any amount of time? What does this tell you about the key aspects of proportionality?",
+        "Hint2":"Recall that when Candle A has burned 20mm in length, Candle B has also burned 12mm in length. Also, remember that the candles each burn at a constant rate and are lit at the same time. If the length that Candle A has burned doubles or triples, do you think that the length that Candle B has burned also doubles or triples? What does this tell you about the key aspects of proportionality?"
+    },
+    "Expectation3":{
+        "Expectation":"The relationship between the length that Candle A has burned and the length that Candle B has burned is proportional.",
+        "Hint1":"Recall the key aspects of proportionality-covariance and invariance. In this situation, what happens to the length that Candle B has burned if the length that Candle A has burned doubles? Also, is the quotient of the length that Candle A has burned and the length that Candle B has burned constant? Based on your answers to these two questions, what can you say about the type of relationship between the length that Candle A has burned and the length that Candle B has burned?",
+        "Hint2":"Actually, since each candle was lit at the same time and each candle burns at a constant rate, as the length that Candle A has burned increases, so does the length that Candle B has burned. Also, the quotient of the length that Candle A has burned and the length that Candle B has burned is constant. Based on this information, is the relationship between the length that Candle A has burned and the length that Candle B has burned proportional?"
+    },
+    "Conclusion":[
+        "openNewImage(./static/images/image-SM4/Using Candles Summary Image.png)",
+        "To determine if a relationship between quantities is proportional, it must have two features: (1) covariance and (2) invariance. In this activity, we see how the relationship between the length that Candle A has burned and the length that Candle B has burned is proportional. Since the two candles are lit at the same time and each burns at a constant rate, we can infer that both candles will consistently burn off an amount of wax and the length that Candle A has burned is always 5/3 times the length that Candle B has burned."
+    ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Choosing Paint Mixtures": {
+        "Introduction" : [
+            "In this activity, we will use strip diagrams to represent ratios."
+        ],
+        "Stage1": {
+            "Prompt": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-1.2.a.i_Choosing_Paint_Mixtures.png)",
+                "Your friend Alex wants to paint his room a dark shade of green. To do so, he is planning to mix yellow and blue paint, where more blue paint indicates a darker shade of green. As he plans, Alex cannot decide which of the following two paint mixtures will produce a darker shade:<br><br><ul><li>Mixture A: 3 parts yellow and 5 parts blue</li><li>Mixture B: 4 parts yellow and 6 parts blue</li></ul><br><br>Using the virtual strip diagram, brainstorm how you would use a strip diagram to help Alex understand which mixture will make a darker shade of green.",
+                "openStripDiagram()",
+                "Now, based on the strip diagram representations, which mixture do you think Alex should use to produce the darker shade of green? Please justify your answer."
+            ],
+            "Expectation1": {
+                "Expectation": "The shade of green depends on the number of blue parts per one part of yellow.",
+                "Hint1": [
+                    "Let's make more quantities of Mixtures A and B until both mixtures have the same amount of yellow parts.",
+                    "openNewVideo(/static/images/image-CKSM2/CK-SM2-1.2.b.ii.1_Choosing_Paint_Mixtures.mp4)",
+                    "Using the information, explain what determines the shade of green."
+                ],
+                "Hint2": [
+                    "Recall that blue parts are equally distributed among the yellow parts for each mixture. Let's see the amount of blue parts per one yellow part for Mixture A.",
+                    "openNewVideo(/static/images/image-CKSM2/CK-SM2-1.2.b.iii.1.a_Choosing_Paint_Mixtures.mp4)",
+                    "Now, let's check the amount of blue parts per one yellow for Mixture B.",
+                    "openNewVideo(/static/images/image-CKSM2/CK-SM2-1.2.b.iii.1.b_Choosing_Paint_Mixtures.mp4)",
+                    "Based on this information, what can you say about what determines the shade of green?"
+                ]
+            },
+            "Expectation2": {
+                "Expectation": "Mixture A will make a darker shade of green.",
+                "Hint1": [
+                    "In each mixture, the blue and yellow paint are mixed homogenously, and more blue paint per one unit of yellow paint in a mixture produces a darker shade of green. Using the calculator, please compute the ratio of blue to yellow for each mixture.",
+                    "openPopupCalculator()",
+                    "Using this information, decide which mixture will produce a darker shade of green."
+                ],
+                "Hint2": [
+                    "The amount of blue paint per one yellow paint is 5/3 (or 1.67) for Mixture A and 6/4 (or 1.5) for Mixture B. Can you tell which mixture will produce a darker shade of green?"
+                ]
+            }
+        },
+        "Closing": [
+            "openNewImage(./static/images/image-CKSM2/CK-SM2-1.3.a_Choosing_Paint_Mixtures.png)",
+            "Strip diagrams help students visualize the relationship between quantities.  Notice that the number of yellow and blue parts in the strip diagram represents the ratio of blue and yellow paint for each mixture. When comparing two different mixtures of the same two quantities, it is critical to focus on the multiplicative comparisons (e.g., the number of blue parts per the same number of yellow parts) instead of additive comparisons (e.g., there are two more blue parts than yellow parts)."
+        ],
+        "Summary Content": [
+            "Strip diagrams can help students visualize ratios.",
+            "Strip diagrams can help students compare ratios and create equivalent ratios.",
+            "Strip diagrams are helpful representations for showing the relative size of a unit rate."
+        ]
+    }
+}

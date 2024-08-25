@@ -1,0 +1,56 @@
+{
+    "Planetary Weights": {
+      "Introduction": [
+        "In this activity, we will investigate how a double number line can be used to represent relationships between two quantities."
+      ],
+      "Stage1": {
+        "Prompt": [
+          "openNewImage(./static/images/image-CKSM2/CK-SM2-3.2.a.i.1_Planetary_Weight.png)",
+          "The weight of an object on a planet is determined by a planet’s surface gravity, meaning the weight of an object on one planet will be different from its weight on another planet. The following two equations represent the weight of an object on Planet A and Planet B in relation to its weight on Mars.<br><br><ul><li>Planet A = 1/3 times the weight on Mars</li><li>Planet B = 1/4 times the weight on Mars</li></ul><br><br>Using the whiteboard, please draw a double number line to visualize the relationship. To give you an idea of how to create the double number line, we provide an example for the relationship between an object’s weight on Planet A compared to its weight on Mars. Using this information, construct a double number line to represent the relationship between Mars and Planet B. Draw two parallel number lines. On each line, create tick marks and label them with values by multiplying (or dividing) the values on each line by the same number, such as 2, 3, and 4.",
+          "openWhiteBoard()",
+          "Let’s create a double number line to see an object’s weight on Planet A and Planet B.",
+          "openNewVideo(/static/images/image-CKSM2/CK-SM2-3.2.a.ii_Planetary_Weight.mp4)",
+          "What type of relationship exists between an object’s weight on Planet A and its weight on Planet B?",
+          "openWhiteBoard()"
+        ],
+        "Expectation1": {
+          "Expectation": "The relationship between an object’s weight on Planet A and on Planet B is proportional.",
+          "Hint1": [
+            "openNewImage(./static/images/image-CKSM2/CK-SM2-3.2.b.ii_Planetary_Weight.png)",
+            "Look at the combined double number line and consider what happens to the weight on Planet B as the weight on Planet A changes. Also, think about how the weight on Planet A relates to the weight on Planet B for different values. Based on this information, what can you say about the relationship between the weights on Planet A and Planet B?"
+          ],
+          "Hint2": [
+            "openNewImage(./static/images/image-CKSM2/CK-SM2-3.2.b.iii_Planetary_Weight.png)",
+            "As you can see in the image, the weights on both Planet A and Planet B change together. Pay attention to what remains constant for an object’s weight on Planet A compared to Planet B, regardless of the object’s weight. What type of relationship do you notice between these two quantities?"
+          ]
+        }
+      },
+      "Stage2": {
+        "Prompt": [
+          "openNewImage(./static/images/image-CKSM2/CK-SM2-3.3.a.i_Planetary_Weight.png)",
+          "Write an equation that represents the relationship between an object’s weight on Planet A in relation to its weight on Planet B.<ul><li>Planet A = [  ]</li></ul>"
+        ],
+        "Expectation1": {
+          "Expectation": "Planet A = 4/3 * Planet B",
+          "Hint1": [
+            "openNewImage(./static/images/image-CKSM2/CK-SM2-3.3.b.ii_Planetary_Weight.png)",
+            "We can see how the weights on Planet A and Planet B change together. You know that this is a proportional relationship, which means the unit rate (quotient) will be constant. Calculate how many times the weight on Planet A is as the weight on Planet B, and rewrite the equation.",
+            "openPopupCalculator()"
+          ],
+          "Hint2": [
+            "openNewImage(./static/images/image-CKSM2/CK-SM2-3.3.b.iii_Planetary_Weight.png)",
+            "As you can see in the image, an object on Planet A weighs 4/3 units for every 1 unit of its weight on Planet B. Use this information and revise your equation."
+          ]
+        }
+      },
+      "Closing": [
+        "openNewImage(./static/images/image-CKSM2/CK-SM2-3.4.a_Planetary_Weight.png)",
+        "Double number lines can be used to visualize relationships between two quantities. In this problem, we used double number lines to show how all pairs of quantities vary directly with each other, and how the quotient of an object’s weight on Planet A to its weight on Planet B is constant, which is 4/3. Also, the quotient of an object’s weight on Planet B to its weight on Planet A is constant, which is 3/4. The unit rate, or constant of proportionality (i.e., k=y/x), is the quotient of two quantities and tells us how many units there are of the first quantity for 1 unit of the second quantity. We can use this information to write equations of the form y=kx, where k is the constant of proportionality."
+      ],
+      "Summary Content": [
+        "Double number lines help visualize equivalent ratios that make up a proportional relationship and show how two quantities are related.",
+        "Two quantities are in a proportional relationship if all pairs of values of the quantities change together and the quotient of the two quantities is constant.",
+        "The unit rate is the constant of proportionality."
+      ]
+    }
+}

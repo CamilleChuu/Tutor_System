@@ -1,0 +1,56 @@
+{"Mixing Paint Activity": {
+  "Introduction":["In this activity, we will explore shades created by different mixtures."],
+  "Stage1": {
+  "Prompt":[
+    "openNewImage(./static/images/image-CKSM1/CKSM1.4.2.a_Mixing_Paint.png)",
+    "Sarah is painting her room gray by mixing green and red paints, where more green paint in the mixture produces a darker shade of gray. Sarah begins her painting project by mixing 4 parts green paint with 3 parts red paint (Mixture A). After running out, she creates 5 parts green and 4 parts red for a larger batch (Mixture B). Still needing more, she makes an even larger batch with 6 parts green and 5 parts red (Mixture C).",
+    "<ul><li>Mixture A: 4 parts of green paint and 3 of parts red paint.</li><li>Mixture B: 5 parts of green paint and 4 parts of red paint.</li><li>Mixture C: 6 parts of green paint and 5 parts of red paint.</li></ul>",
+    "After finishing, she noticed the mixtures produced three different shades of gray. Why did this happen, and which mixture resulted in the darkest shade?"
+    ],
+  "Expectation1":{
+    "Expectation":"The shade of gray for each mixture is dependent on the number of green parts per red part.",
+    "Hint1":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.4.2.b.ii_Mixing_Paint.png)",
+      "In each mixture the different amounts of green and red paints are mixed homogeneously. Think about what determines the shade of gray in each mixture."
+      ],
+    "Hint2":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.4.2.b.iii_Mixing_Paint.png)",
+      "For each mixture, consider how many parts of green paint there are per one part of red paint. What does this tell us about why the shades of gray are different?"
+      ]
+  },
+  "Expectation2":{
+    "Expectation":"The constant difference will not keep the shade the same because the shade is determined by the ratios of the green and red paint in each mixture.",
+    "Hint1":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.4.2.c.ii_Mixing_Paint.png)",
+      "Sarah created Mixture B and C by adding the same amount of green and red paints to the previous mixture. However, they resulted in different shades of gray. Why does adding the same amount of green and red paint to the previous mixture not make the same shade of gray?"
+      ],
+    "Hint2":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.4.2.c.iii_Mixing_Paint.png)",
+      "Adding the same amount of green and red paint did not produce the same shade of gray. This indicates that the same shade cannot be created by keeping the difference between the green and red parts constant. What aspect of the mixture of green and red paint needs to be constant to produce larger batches of the same shade of gray?" 
+      ]
+  },
+  "Expectation3":{
+    "Expectation":"Mixture A is the darkest shade of gray (i.e., Mixture A has the most parts green paint per one part of red paint).",
+    "Hint1":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.4.2.d.ii_Mixing_Paint.png)",
+      "In each mixture, the green and red paint are mixed homogeneously and more green paint in the mixture produces a darker shade of gray. For each mixture, compute how many parts of green paint are needed for every one part of red paint using the provided calculator.",
+      "openPopupCalculator()", 
+      "Use this information to decide which mixture is the darkest shade of gray."
+      ],
+    "Hint2":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.4.2.c.iii_Mixing_Paint.png)",
+      "The mixture with the most parts of green paint for every one part of red paint will produce the darkest shade of gray. Which mixture has the most parts green paint per one-part red paint?"
+      ]
+    }
+  },
+  "Closing":[
+    "openNewImage(./static/images/image-CKSM1/CKSM1.4.4.2.a_Mixing_Paint.png)",
+    "When working on problems like this, students often think that adding or subtracting the same amount to each quantity will produce the same results. This is because students often think keeping the difference between variable quantities constant will keep the relationship between the quantities the same. In contrast, as we see in this activity, the shade of gray is dependent on the amount of a quantity per one unit of the other quantity (i.e., green parts per one-part red). This means when the quotient of the two quantities is constant, the mixture will produce the same shade of gray. It's important for students to understand that some relationships depend on the constant quotient of the quantities to produce the same outcomes, rather than the constant difference between the quantities."
+  ],
+  "Summary Content": [
+      "The shade of gray for each mixture is dependent on the number of green parts per red part.",
+      "The constant difference will not keep the shade the same because the shade is determined by the ratios of the green and red paint in each mixture.",
+      "Mixture A is the darkest shade of gray (i.e., Mixture A has the most parts green paint per one-part red paint)."
+  ]
+}
+}

@@ -1,0 +1,51 @@
+{"The squareness of a rectangle": {
+    "Introduction":["In this activity, we will focus on reasoning about a mathematical situation."],
+    "Stage1": {
+    "Prompt":[
+      "The dimensions of four rectangles are given. Which rectangle looks most like a square? Explain your thinking using complete sentences.",
+      "openNewImage(./static/images/image-CKSM1/CKSM1.1.2.a_Comparing_Dimensions.png)"
+      ],
+    "Expectation1": {
+      "Expectation":"The closer a ratio of the sides in a rectangle is to one, the more it looks like a square.",
+      "Hint1":"What is the relationship between the length and width of a square? How could you use this information to determine if a rectangle looks more or less like a square?",
+      "Hint2": [
+        "Using the calculator, please compute the ratio of width to length for each rectangle. Think through what these ratios indicate about the rectangle and close the calculator when you are finished.", 
+        "openPopupCalculator()", 
+        "Now, you have computed the ratio for each rectangle as follows: 7/10 = 0.7, 17/20 = 0.85, 27/30 = 0.9, and 37/40 = 0.925. What do you notice about the ratio of each rectangle and how much they look like a square?"
+      ]
+      },
+    "Expectation2": {
+      "Expectation":"The larger the sides of the rectangle with a 3-unit difference, the more it looks like a square.",
+      "Hint1":[
+        "In the pop-up activity, you will see a rectangle with a 3-unit difference between the length and width. By dragging the corners, you can change the size of the rectangle, but there will still be a 3-unit difference in the length and width. Take a moment to manipulate the rectangle. As you make the dimensions larger and smaller, think about how the same 3-unit difference between the length and width affects how much the rectangle does or does not look like a square.", 
+        "openPopupDragboard()", 
+        "As the length and width get bigger or smaller, how does the 3-unit difference between length and width impact the ratio of the dimensions?"
+      ],
+      "Hint2":[ 
+        "openNewImage(./static/images/image-CKSM1/CKSM1.1.2.c.iii_Comparing_Dimensions.png)", 
+        "Let's only focus on these rectangles now. How would the 3-unit difference between the dimensions impact their resemblance of a square? Explain your answer using complete sentences."
+      ]
+    },
+    "Expectation3":{
+      "Expectation":"The correct answer is the rectangle with dimensions 37 ft by 40 ft.",
+      "Hint1":[
+        "openNewImage(./static/images/image-CKSM1/CKSM1.1.2.a_Comparing_Dimensions.png)", 
+        "Given the dimensions of the four rectangles, which rectangle do you think looks most like a square?"
+      ],
+      "Hint2":[
+        "openNewImage(./static/images/image-CKSM1/CKSM1.1.2.a_Comparing_Dimensions.png)",
+        "Which rectangle has a ratio of width to length that is closest to 1?"
+      ]
+      }
+    },
+    "Closing":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.1.3.a_Comparing_Dimensions.png)",
+      "The ratio of length to width of a square is 1, and rectangles that have a ratio of length to width closer to 1 will look more like a square. We purposely selected these four rectangles to show not constant difference, but constant quotient will create similar rectangles. As the dimensions get larger (i.e., 37x40), the effect of the 3-unit difference is less on the ratio and it will look more like a square. However, as the dimensions get smaller (i.e., 7x10), the effect of the 3-unit difference is greater on the ratio and it will look less like a square. It's important to note here that because, the <i>quotient</i> of width and length (i.e., the ratio) and not the <i>difference</i> between the length and width determines how much a rectangle can look like a square."
+    ],
+    "Summary Content": [
+      "The closer a ratio of the sides in a rectangle is to one, the more it looks like a square.",
+      "The larger the sides of the rectangle with a 3-unit difference, the more it looks like a square.",
+      "The correct answer is the rectangle with dimensions 37 ft by 40 ft."
+    ]
+    }
+  }

@@ -1,0 +1,17 @@
+{
+    "SM 2 Reflection Activity": {
+        "Introduction": [
+            "Let’s take a moment to reflect on what you have learned in this submodule."
+        ],
+        "Stage1": {
+            "Prompt": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-8.2.a.i_Stacking_Paper.png)",
+                "You just completed the second submodule! In this submodule, you worked on activities that highlight using different representations to identify proportional relationships. When there is a proportional relationship between two quantities, the quotient, the constant of proportionality, or unit rate, remains the same—that is, one quantity is always a constant multiple of the other. Similarly, equivalent ratios indicate that the multiplicative relationship between the quantities is the same in these ratios (i.e., how one quantity relates to the other is the same across the values involved in the ratios). Several representations can show such proportional relationships, including ratio tables, strip diagrams, double number lines, graphs, and equations.",
+                "Reflect on what you learned from completing these activities and how you can incorporate what you learned into your teaching. Use the textbox to consider the following: (1) How can you help students focus on multiplicative relationships and the constant quotient when using different representations to visualize ratio and proportional relationships? (2) How will you use this information in your teaching to support student understanding of ratios and proportional relationships?",
+                "Once you’ve finished your reflection, hit submit.",
+                "openTextEditor()"
+            ]
+        },
+        "Closing": "You have completed this submodule. Next, let’s check what you have learned in this submodule!"
+    }
+}

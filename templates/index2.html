@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chat.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/template.css') }}">
+    <script src="{{ url_for('static', filename='js/register.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/template.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tools.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/filepath.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/inboxswitch.js') }}"></script>
+    <script>
+        window.onload = function() {
+            updateUsername();
+            checkAndNavigate();
+    };</script>
+
+
+<title>Tutor System Example</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="row" style="width: 100%;">
+        <p style="margin-left: 5%; margin-right: 5%; color: white; font-size: 20px;">Tutor System Demo</p>
+        <select id="pageSelect" onchange="navigateToPage()">
+            <option value="" disabled selected hidden>Select a CK Question</option>
+            <option value="Comparing Dimensions">1.1 Comparing Dimensions</option>
+            <option value="Making Iced Tea">1.2 Making Iced Tea</option>
+            <option value="Making More Iced Tea">1.3 Making More Iced Tea</option>
+            <option value="Mixing Paint">1.4 Mixing Paint</option>
+            <option value="Choosing Paint Mixtures">2.1 Choosing Paint Mixtures</option> 
+            <option value="Tracking Gasoline Prices">2.2 Tracking Gasoline Prices</option>
+            <option value="Planetary Weight">2.3 Planetary Weight</option>
+            <option value="Making Punch">2.4 Making Punch</option>
+            <option value="Speed Walking">2.5 Speed Walking</option>
+            <option value="Speed Walking Revisited">2.6 Speed Walking Revisited</option>
+            <option value="Stacking Paper">2.7 Stacking Paper</option>
+            <option value="Building Buses">4.1 Building Buses</option>
+            <option value="Filling the Tub">4.2 Filling the Tub</option>
+            <option value="Building a House">4.3 Building a House</option>
+            <option value="Building a Neighborhood">4.4 Building a Neighborhood</option>
+            <option value="Using Candles">4.5 Using Candles</option>
+            <option value="Using More Candles">4.6 Using More Candles</option>
+            <option value="Auctioning Paintings">4.7 Auctioning Paintings</option>
+            <!-- <option value="Making Punch">2.4 Making Punch</option> -->
+            <option value="Classroom Demographics">3.1 Classroom Demographics</option>
+        </select>
+        <p id="user-display"  style="position: absolute; right: 5%; margin-left: 5%; margin-right: 5%; color: white; font-size: 15px;"> </p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <br><p style="color: white;">Tool Bar</p>
+        <button onclick="openPopupCalculator()">Open Calculator</button><br>
+        <button onclick="openPopupDragboard()">Open Drag-board</button><br>
+        <button onclick="openPopupWhiteboard()">Open Textboard</button><br>
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <div class="figure-section">
+                <!-- Insert your figure here -->
+                <img src="{{ url_for('static', filename='/images/blank.jpg') }}" alt="Figure" id="figure">
+            </div>
+            <div class="text-section" id="openingText">
+                <!-- Insert your text here -->
+                To start the Tutor System: Please [Select a Question] in the Navigation Bar at top. 
+            </div>
+            <div class="button-section" id="buttonZone">
+                <a href="{{ url_for('static', filename='../progress') }}"><button>Progress</button></a>
+                <a onclick = "navigateToPage2()"><button>(placeholder)</button></a>
+                <a href="{{ url_for('static', filename='popups/summary.html') }}"><button>Go To Summary</button></a>
+                <a onclick = "Logout()"><button>Logout</button></a>
+                <!-- <br>
+                <button onclick="OpeningOutput('Comparing Dimensions')">Question: Comparing Dimensions</button>
+                <button onclick="OpeningOutput('Making Iced Tea')">Question: Making Iced Tea</button>
+                <button onclick="OpeningOutput('Mixing Paint')">Question: Mixing Paint</button><br> -->
+            </div>
+        </div>
+        <div class="right-section">
+                    <div class="col-sm-12 col-xs-12 chat shaddowAdd" style="width: 30%; height: 70%; background-color: #ffffff; margin-top: 5%">
+                        <div class="col-inside-lg decor-default"  style="height: 90%; ">
+                            <h2 style="background-color: #ffffff;">Dialogue</h2>
+                            <div class="chat-body" id="dialogueSection" style="height:90%;overflow:auto;"> </div>
+                        </div>                            
+                        </div>
+
+                    <div class="answer-add2" style="background-color: #ffffff; width: 30%">
+                         <div class="row" id="inputboxbutton" style="width: 100%; visibility: hidden">
+                            <div class="col-sm-10" style="width: 100%"><input type="text" id="userInput" placeholder="Type your message here..." autofocus style="width: 100%;"></div>
+                             <div class="col-sm-2">
+                                <button id='submitBtn' type="button" class="btn btn-outline-dark" style="border-radius: 50%;">
+                                    <i class="fa fa-location-arrow"></i>
+                                </button>
+                             </div>
+                         </div>      
+                         <span class="end-box" id="end_box">Activity ends. Please Select another Question in the Navigation Bar at top.</span>
+                    </div>
+                </div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+        var container = document.querySelector('.figure-section');
+        var img = document.getElementById('figure');
+        resizeImageToFit(container, img);
+         });
+        var calculatorUrl = "{{ url_for('static', filename='popups/calculator.html') }}";
+        var dragboardUrl = "{{ url_for('static', filename='popups/drag-board.html') }}";
+        var whiteboardUrl = "{{ url_for('static', filename='popups/whiteboard.html') }}";
+        var videoUrl = "{{ url_for('static', filename='popups/video.html') }}";
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+{"Making Iced Tea": {
+  "Introduction": ["In this activity, we will compare the sweetness of the iced tea in different pitchers."],
+  "Stage1": {
+  "Prompt": [
+      "The red and blue pitchers in the figure contain sweetened iced tea that tastes the same and is a combination of liquid and sugar. One scoop of sugar is added to the red pitcher and one scoop of sugar is added to the blue pitcher. Compare the sweetness of the iced tea for each pitcher after adding one scoop of sugar. Explain your answer.",
+      "openNewImage(./static/images/image-CKSM1/CKSM1.2.2.a_Making_Iced_Tea.png)"
+    ],
+  "Expectation1": {
+    "Expectation":"Adding one scoop of sugar results in a greater ratio of sugar to liquid in the blue pitcher because the blue pitcher has less volume of liquid.",
+    "Hint1": "Recall that the red and blue pitchers originally had the same taste of sweetness, which means that the quantity of sugar per the same volume of liquid was the same in each pitcher. How does adding the equal amount of sugar to different volumes of liquid affect the taste of sweetness for each pitcher? Explain your answer.",
+    "Hint2": "Remember that taste of sweetness depends on the amount of sugar per unit of liquid. After adding one scoop of sugar to each pitcher, which pitcher has a greater ratio of sugar to liquid? Explain why.",
+    "Hint3": [
+      "Let's assume there are 40 grams of sugar and 4 liters of liquid in the red pitcher, and there are 10 grams of sugar and 1 liter of liquid in the blue pitcher. If 10 grams of sugar are added to both pitchers, please compute the new ratio of sugar to liquid for each pitcher using the calculator.",
+      "openPopupCalculator()",
+      "Now, you have computed the new ratio of sugar to liquid for each pitcher – 50/4 for the red pitcher and 20/1 for the blue pitcher. What do you notice about the new ratios of sugar to liquid after adding one scoop of sugar? Explain your reasoning."
+      ]
+    },
+  "Expectation2":{
+    "Expectation":"The blue pitcher tastes sweeter.",
+    "Hint1": "Recall that the red and blue pitchers originally had the same taste of sweetness. After adding one scoop of sugar, which pitcher would taste sweeter?",
+    "Hint2": "After adding one scoop of sugar, which pitcher would have a greater ratio of sugar to liquid?"
+  }
+  },
+  "Closing":[
+    "The amount of sugar per unit of liquid determines the sweetness of the iced tea. Although both pitchers originally had the same taste of sweetness, adding one scoop of sugar will increase the amount of sugar per unit of liquid more in the blue pitcher than in the red pitcher. This is because the blue pitcher contains less liquid than the red pitcher. As you see in this activity, the taste of sweetness is determined by the amount of sugar per unit of liquid.",
+    "openNewImage(./static/images/image-CKSM1/CKSM1.2.3.a_Making_Iced_Tea.png)"
+    ],
+    "Summary Content": [
+      "Adding one scoop of sugar results in a greater ratio of sugar to liquid in the blue pitcher because the blue pitcher has less volume of liquid.",
+      "The blue pitcher tastes sweeter."
+    ]
+  }
+}
+  

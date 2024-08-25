@@ -1,0 +1,29 @@
+message_dict = {
+    'Comparing Dimensions' : {
+        'opening': "In this activity, we will focus on reasoning about a mathematical situation.",
+        'question': "Dimensions of the four rectangles are given above. Which rectangle do you think looks more like a square? Explain your reasoning.",
+        'hint_dict': {"1": ["By using the calculator, please compute the ratio of width to length for each rectangle.", "Now, you have computed the ratio for each rectangle, respectively, as follows: 7/10 = 70%, 17/20 = 85%, 27/30 = 90% and 37/40 = 92.5%. What do you notice between the ratio of width to length and how much they look like a square?"],
+        "2": ["In the pop up activity, you will see a rectangle with a 3 unit difference between its length and width. Please drag the rectangle to investigate how the same 3 unit difference between length and width of each rectangle affects the ratio of width to length.", "As the dimensions get bigger, how does the effect of a 3 unit difference on the ratio of width to length change?"],
+        "3": ["Given the dimensions of the four rectangles, which rectangle do you think looks more like a square?"]},
+        'closing': "The ratio of length and width determines how close a rectangle is to being a square. We purposely selected these four rectangles that have a three unit difference to show you that the same three unit difference has a different impact on how these rectangles look. Because the width and length of a rectangle are in a proportional relationship, the quotient of width and length (not the difference between the length and width) determines how much a rectangle looks like a square." ,
+        'func_dict': {"1": "openPopupCalculator()", "2":"openPopupDragboard()" , "3": 0}
+    }, 
+    "Making Iced Tea": {
+        "opening": "In this activity, we will compare ratios.", 
+        "question": "The red and blue pitcher in the figure contain sweetened ice tea that tastes the same. If one scoop of sugar is added to each pitcher. Compare the sweetness of the iced tea in the red and blue pitcher. Explain your thinking.",
+        'hint_dict': {"1": ["Let's assume that there were 30 grams of sugar and 3 liters of liquid in the red pitcher, and there were 10 grams of sugar and 1 liter of liquid in the blue pitcher. If 10 grams of sugar were added to both pitchers, please compute the ratio of sugar to liquid for each pitcher by using the calculator.", "Now, you have computed the ratio of sugar to liquid for each pitcher.  What can you say about the ratio of sugar to liquid for the blue pitcher?"],
+        "2": ["The red and blue pitcher had the same sweetness, which means that the quantity of sugar per a given amount of liquid was the same in each pitcher.  How do you think adding the same amount of sugar to different amounts of liquid affects the taste in each pitcher?"],
+        "3": ["Consider the blue pitcher versus the red one. How would you compare the sweetness of the blue pitcher?"]},
+        'closing': "The ratio of sugar to liquid determines the sweetness of iced tea. Because the blue pitcher contains less liquid than the red pitcher, adding one scoop of sugar will increase the ratio of sugar to liquid in the blue pitcher. As you see in this activity, the ratio is dependent upon the quotient of these quantities." ,
+        'func_dict': {"1": "openPopupCalculator()", "2":0 , "3": 0}
+    },
+    "Mixing Paint":{
+        'opening':"In this activity, we will explore relationships among two quantities in three different mixtures.", 
+        "question": "Sarah made the given three mixtures using red and green paint. <br> Mixture A had 4 parts red and 3 parts green. <br>Mixture B had 5 parts red and 4 parts green. <br>Mixture C had 6 parts red and 5 parts green.<br> Assume that each part is identical in size. Which of the mixtures have the same shade of gray? Are the three mixtures in a proportional relationship? Explain your answer.",
+        'hint_dict': {"1": ["In a proportional relationship, the relationship between two quantities must be uniform.  Uniformity implies that what is being measured by the quantities is the same at all times.  What can you say about the size of each part in any of the given mixtures?"],
+        "2": ["When you change the number of green parts in each mixture, what happens to the number of red parts in each mixture? You may use the calculator to compare the number of green and red parts in each mixture."],
+        "3": ["Let's step back. Mixture A had 4 parts red and 3 parts green. Mixture B had 5 parts red and 4 parts green. Mixture C had 6 parts red and 5 parts green. What are the unit rates, the quotients of the two quantities, in each mixture? You may use the calculator to compute the unit rates. ", "When looking at the relationship between the number of green and red parts in each mixture, what do you notice about the unit rates in each mixture?"]},
+        'closing': "To determine if a relationship between quantities is proportional, it must have three properties: (1) uniformity, (2) co-variance, (3) invariance. In this activity, the relationship between the number of green parts and red parts across the mixtures are not proportional: 1) It is uniform, as each part is identical in size; 2) They covary, because the number of green parts and red parts change together across the mixtures; but 3) It is NOT invariant, since the unit rate, the number of green parts per one red part, is not constant in each mixture. Therefore, each mixture will have a different shade of color." ,
+        'func_dict': { "1":0, "2": "openPopupCalculator()", "3": "openPopupCalculator()"}
+    }
+}

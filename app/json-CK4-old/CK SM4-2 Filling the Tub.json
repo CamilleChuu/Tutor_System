@@ -1,0 +1,24 @@
+{"Filling the Tub":{
+    "Introduction":"In this activity, we will determine if a relationship is proportional using the two key features of proportionality.",
+    "Prompt":"Pica notices the faucet for her bathtub is leaking! She decides to place an empty bucket under the faucet to capture all the water. As the faucet leaks into the bucket, it is dripping intermittently (i.e., occuring at irregular intervals, not continuous or steady). Pica leaves and comes back after 45 minutes. When she returns, Pica notices the amount of water in the bucket is 2 liters! Is the relationship between elapsed time and the amount of water in the bucket proportional? Explain why or why not.",
+    "Expectation1":{
+        "Expectation":"As time changes, the amount of water in the bucket also changes, meaning the two quantities covary.",
+        "Hint1":"As elapsed time doubles or triples, how does the amount of water in the bucket change? What does this tell you about the key aspects of proportionality?",
+        "Hint2":"As elapsed time increases, does the amount of water in the bucket increase, decrease, or stay the same? What does this tell you about the key aspects of proportionality?"
+        },
+    "Expectation2":{
+        "Expectation":"Since the water drops intermittently, the amount of water in the bucket per elapsed time is not constant, meaning the quotient of any non-zero pairs of quantities is not invariant.",
+        "Hint1":"The problem indicates that the water drops intermittently. Based on this information, what can you say about the amount of water in the bucket per elapsed time, at any time point? What does this tell you about the key aspects of proportionality?",
+        "Hint2":"Recall that the problem indicates that the water drops intermittently. This means that the drops of water occur at irregular time points. What does this mean for the quotient of any non-zero pairs of elapsed time and the amount of water in the bucket? What does this tell you about the key aspects of proportionality?"
+        },
+    "Expectation3":{
+        "Expectation":"The relationship between elapsed time and water level is not proportional.",
+        "Hint1":"Recall the key aspects of proportionality-covariance and invariance. In this situation, does elapsed time and the amount of water in the bucket change together? Also, is the quotient of the amount of water in the bucket and elapsed time constant? Based on your answer to these two questions, what can you say about the type of relationship between elapsed time and the amount of water in the bucket?",
+        "Hint2":"Actually, elapsed time and amount of water in the bucket do covary, since as time increases, the amount of water in the bucket also increases. However, the quotient of any non-zero pairs of the amount of water in the bucket and elapsed time is not constant, because the water drops into the bucket at irregular time intervals. Based on this information, is the relationship between elapsed time and the amount of water in the bucket proportional?"
+        },
+    "Conclusion":[
+        "openNewImage(./static/images/image-SM4/Filling the Tub Summary Image.png)",
+        "To determine if a relationship between two quantities is proportional, it must have two features: (1) covariance and (2) invariance. In this activity, elapsed time and the amount of water in the bucket covary because the amount of water changes as time passes. However, the relationship between elapsed time and water level is not proportional because water drops intermittently, which causes the quotient of the amount of water in the bucket and elapsed time to not be constant."
+    ]
+    }
+}

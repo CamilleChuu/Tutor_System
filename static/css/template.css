@@ -1,0 +1,126 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+.container {
+    display: flex;
+    height: 80%;
+    width: 100%;
+}
+.left-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.figure-section {
+    height: 45%;
+    /* padding: 3%; */
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #808080;
+    margin-bottom: 3%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+#figure {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.figure-section img {
+    width: 100%; 
+    height: 100%;
+    display: block; 
+    margin: 0 auto;
+}
+.text-section {
+    height: 45%;
+    padding: 3%;
+    bottom: 10%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: black; 
+    border: 1px solid #808080;
+    overflow-y: auto;
+}
+.button-section {
+    height: 15%;
+    padding: 1%;
+    bottom: 3%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: black; 
+    border: 1px solid #808080;
+}
+.right-section {
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3%;
+    background-color: #ffffff; 
+    box-sizing: border-box;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar {
+  position: fixed; 
+  left: 3%;
+  top: 20%;
+  width: 8%;  
+  height: 50%;
+  background-color: darkcyan;  
+  box-sizing: border-box;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pageSelect {
+  background-color: darkcyan;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-bar {
+  background-color: darkcyan;
+  padding: 10px 0;
+  text-align: center; /* Centers the drop-down in the bar */
+}
+
+/* Changing the color of options when hovering (optional) */
+#pageSelect:hover {
+  background-color: #01363a; /* A slightly darker shade of dark cyan */
+}
+
+/* Style for the options inside the dropdown */
+#pageSelect option {
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.end-box {
+  display: inline-block;
+  border: 1px solid #ccc; 
+  padding: 8px 10px;
+  background-color: #90ee90; 
+  color: black; 
+  font-family: Arial, sans-serif; 
+  text-align: center;
+  visibility: hidden;
+}

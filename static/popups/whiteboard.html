@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Editor</title>
+  <style>
+    #whiteboard {
+      width: 600px;
+      height: 400px;
+      background-color: white;
+      border: 2px solid black;
+      padding: 10px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #textArea {
+      width: 100%;
+      height: 85%;
+      box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    }
+
+    #submitText {
+      width: 100%;
+      padding: 10px 0;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="whiteboard">
+    <textarea id="textArea" placeholder="Enter your note here ..."></textarea>
+    <button id="submitText" onclick="submitText()">Submit</button>
+  </div>
+  
+  <script>
+    function submitText() {
+      const textArea = document.getElementById('textArea');
+      // const content = textArea.value;
+      
+      // Perform an action with the content, e.g., display it in an alert
+      // alert(content);
+
+      // Clear the textarea after submission
+      textArea.value = '';
+      window.close();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+    "Classroom Demographics": {
+      "Introduction": ["In this activity, we will focus on combining ratios."],
+      "Stage1": {
+        "Prompt": [
+          "Ms. Sophia announced that 70% of the girls were interested in taking the class trip, whereas only 60% of the boys were interested in taking the class trip. Jacob exclaimed, \"That means that 65% of the class is interested in going on the trip.\" Is Jacob correct? Explain your answer."
+        ],
+        "Expectation1": {
+          "Expectation": "Jacob's answer is not correct under all conditions (sometimes correct and sometimes wrong, not always correct, not always wrong), because he is only correct when the number of boys and girls in the class is equal.",
+          "Hint1": [
+            "Let's consider all possible conditions. One condition is that there will be an equal number of girls and boys in this class. Under this condition, let's see if Jacob is correct. Using the calculator, find the answer if there are 10 girls and 10 boys. Repeat the process for other equal numbers of boys and girls, such as 20 girls and 20 boys, and 100 girls and 100 boys.",
+            "openPopupCalculator()",
+            "Now, you have computed that 65% of the class is interested in going on the trip as long as there is an equal number of girls and boys. Based on this information, what do you think of Jacob's answer? Explain your response."
+          ],
+          "Hint2": [
+            "Another possible condition is that there will be more boys than girls. Let's see if Jacob's answer is correct in these situations. Use the calculator to find the answer for 10 girls and 20 boys. Why don't you try other numbers as well, such as 10 girls and 30 boys? ",
+            "openPopupCalculator()",
+            "Now, you have computed that about 63.3% of the class is interested in going on the trip when there are 10 girls and 20 boys. When there are 10 girls and 30 boys, the percentage changes to 62.5%. As you may notice, the percentage of students interested in the trip is less than 65% under conditions when there are more boys than girls. Based on this information, reconsider your answer and tell me what you think of Jacob's answer."
+          ],
+          "Hint3": "We have discussed various conditions regarding the number of boys and girls in the class. Initially, when there was an equal number of boys and girls, Jacob was correct. However, when there were more boys than girls, the percentage of the students interested in the trip fell below 65%. <br> Conversely, when there are more girlst than boys, the percentage rises above 65%. For example, let's assume that there are 20 girls and 10 boys. This means 14 out of 20 girls and 6 out of 10 boys were interested in taking the class trip. Thus, a total of 20 out of 30 students were interested, equating to approximately 66.7%. Now, tell me whether Jacob's answer is correct, incorrect, or sometimes correct. Also, explain what determines the correctness of Jacob's answer."
+        }
+        },
+        "Closing": [
+          "openNewImage(./static/images/image-CKSM3/Summary-ClassroomDemographics.jpg)",
+          "When adding or subtracting fractions, all the fractions, including the sum or difference, refer to the same \"whole\". However, when we combine ratios, different ratios refer to different wholes.  For example, in this activity, we see 70% and 60% represent different student groups: boys and girls. This is why the combination of ratios is calculated differently from adding fractions."
+        ],
+        "Summary Content": [
+          "When we add or subtract fractions, all fractions including the sum or difference refer to the same whole.",
+          "When we combine ratios, we do not use fraction rules because ratios refer to different wholes.",
+          "Although ratios can be written in a fraction form (i.e., 2:5 as 2/5), it's important to note that fractions and ratios are not identical concepts."
+        ]
+      }
+    }

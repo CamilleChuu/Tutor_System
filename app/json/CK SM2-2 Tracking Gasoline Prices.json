@@ -1,0 +1,52 @@
+{
+  "Tracking Gasoline Prices": {
+    "Introduction": [
+      "In this activity, we will practice how to recognize relationships in graphs and describe relationships using equations."
+    ],
+    "Stage1": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM2/CK-SM2-2.2.a.i_Tracking_Gasoline_Prices.png)",
+        "The graph shows the relationship between the amount of gasoline used and the total cost. How would you describe the relationship between the gasoline used and the cost of gasoline?"
+      ],
+      "Expectation1": {
+        "Expectation": "The relationship is proportional.",
+        "Hint1": "Let's look at the graph and pay attention to the ordered pairs. If the amount of gasoline used is doubled, does the total cost change? Also, is the total cost a constant multiple of the amount of gasoline used for all ordered pairs? Based on your answers to these two questions, what can you say about the type of relationship between these two quantities?",
+        "Hint2": "The line indicates that when the amount of gasoline changes, the total cost also changes. It also shows that the cost per gasoline used is constant since the line passes through the origin. Given this information, how would you describe the relationship between the two quantities shown in this graph?"
+      }
+    },
+    "Stage2": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM2/CK-SM2-2.2.a.i_Tracking_Gasoline_Prices.png)",
+        "In the cost of gasoline graph, the total cost is marked on the y-axis, and the amount of gasoline used is marked on the x-axis. Since this graph represents a proportional relationship, what is the constant of proportionality?",
+        "If needed, you can use the calculator to find your answer. Once you’re finished, close the calculator.",
+        "openPopupCalculator()"
+      ],
+      "Expectation1": {
+        "Expectation": "checkEquation(10/3, 3.3333, 3.3)",
+        "Hint1": "The graph shows a proportional relationship between the total cost and the amount of gasoline used. This means that the total cost is a constant multiple of the amount of gasoline used. Use this information, and please try again.",
+        "Hint2": "Recall that the y-axis represents the total cost, and the x-axis represents the amount of gasoline used. The constant of proportionality, or unit rate, can be found using the quotient, y/x, of any non-zero pairs of these two quantities. Use this information, and please try again.",
+        "Hint3": "Given that the graph shows a proportional relationship, you can use any point on the graph, such as (3, 10), to find the constant of proportionality. Use this information, and please try again."
+      }
+    },
+    "Stage3": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM2/CK-SM2-2.2.a.i_Tracking_Gasoline_Prices.png)",
+        "Write an equation to depict the relationship between the total cost (y) and the amount of gasoline used (x) as shown in the graph."
+      ],
+      "Expectation1": {
+        "Expectation": "checkEquation(y=(10/3)x)",
+        "Hint1": "In a proportional relationship, the amount of quantity y is constant per one unit of quantity x, meaning that the quotient of these quantities is constant. Think about how you can represent any values for two quantities and their constant quotient in a math equation.  Use this information and try again.",
+        "Hint2": "Proportional relationships are represented using equations of the form y=kx. In these equations, “k” represents the constant of proportionality or unit rate, and x and y represent the amount of gasoline used and the cost, respectively. When you enter any value for the amount of gasoline used (x), the equation you write should yield the corresponding cost of gasoline (y) on the graph. Consider the ordered pairs such as (3, 10), (6, 20), and (9, 30). Using this information, revise your equation accordingly."
+      }
+    },
+    "Closing": [
+      "openNewImage(./static/images/image-CKSM2/CK-SM2-2.5.a.i_Tracking_Gasoline_Prices.png)",
+      "Quantities in a proportional relationship have a multiplicatively invariant relationship, meaning that one quantity is a constant multiple of the other. Therefore, when recognizing and describing proportional relationships through graphs and equations, you need to check whether the total cost (y) is a constant multiple of the amount of gasoline used (x), regardless of the quantities involved. If the quotient of quantities is constant for any ordered pairs on a graph, then the graph represents a proportional relationship. A straight line indicates that the rate of change is constant. However, when the straight line does not cross or touch the x- and y-axis, the rate of quantities is constant, indicating a proportional relationship. Additionally, the equation of a proportional relationship is of the form y=kx, where “k” is the constant of proportionality (i.e., the amount of quantity y per 1 unit of quantity x)."
+    ],
+    "Summary Content": [
+      "In proportional relationships, quantities must change together, and their relationship is multiplicatively invariant (i.e., the quotient of their quantities for any values is constant).",
+      "On a graph, the constant of proportionality can be found using the quotient, y/x, of any non-zero paired quantities (or points) represented on the graph.",
+      "The equation of a proportional relationship is y=kx, where k is the constant of proportionality."
+    ]
+  }
+}

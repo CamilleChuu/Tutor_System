@@ -1,0 +1,35 @@
+{
+  "Building a Neighborhood": {
+    "Introduction": ["In this activity, we will use the key aspects of proportionality to determine if a given situation is proportional."],
+    "Stage1": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM4/CK-SM4-4.2.a.i_Building_a_Neighborhood.png)",
+        "Emmit is running a construction company and has many identical houses ready to be painted. His company hires several workers to paint the houses, all of whom paint at the same rate. Assuming all the workers start at the same time, is the relationship between the total number of workers and the total number of painted houses proportional? Explain why or why not."
+      ],
+      "Expectation1": {
+        "Expectation": "As the total number of workers changes, the total number of houses painted also changes, meaning the two quantities covary.",
+        "Hint1": "In this context, when the number of workers doubles or triples, what happens to the total number of painted houses? What does this tell you about the key aspects of proportionality?",
+        "Hint2": "Recall that Emmit hires several workers who work at the same rate. Let’s assume that 3 workers can paint one house. If Emmit doubles the number of identical workers, how many houses can be painted? As the number of workers changes, does the number of houses painted also change? What does this tell you about the key aspects of proportionality?"
+      },
+      "Expectation2": {
+        "Expectation": "The total number of houses painted by the total number of workers is constant, indicating that their relationship is multiplicatively invariant.",
+        "Hint1": "We know that each worker paints at the same rate. Based on this information, what can you say about the number of houses painted per worker, regardless of the number of workers hired? What does this tell you about the key aspects of proportionality?",
+        "Hint2": "Recall that all workers paint at the same rate. If the number of workers is doubled, do you think the number of painted houses is also doubled? Or if the number of workers is tripled, do you think that the number of total painted houses will be tripled? What does this tell you about the key aspects of proportionality?"
+      },
+      "Expectation3": {
+        "Expectation": "The relationship between the total number of workers and the total number of painted houses is proportional.",
+        "Hint1": "Recall the key aspects of proportionality—covariance and multiplicative invariance. In this situation, what happens to the total number of houses painted when the number of workers change? Also, is the number of houses painted per worker constant? Based on your answer to these two questions, what can you say about the type of relationship between the number of workers and the number of painted houses?",
+        "Hint2": "Actually, the number of workers and number of painted houses change together. If Emmit doubles the total number of workers, he will double the number of houses painted. Also, the number of houses painted by each worker is constant because they all work at the same rate and start at the same time. In other words, the number of painted houses is a constant number as many as  the number of workers. Based on this information, is the relationship between the number of workers and the number of painted houses proportional?"
+      }
+    },
+    "Closing": [
+      "openNewImage(./static/images/image-CKSM4/CK-SM4-4.3.a_Building_a_Neighborhood.png)",
+      "To determine if a relationship between two quantities is proportional, it must have two features: (1) covariance and (2) multiplicative invariance. In this activity, the relationship between the total number of workers and the total number of painted houses is proportional. This is because each worker paints at the same rate and starts at the same time, which means that as the number of workers changes, the total number of painted houses also changes. Also, each worker paints the same number of houses, so the quotient of the total number of painted houses and the total number of workers is constant, meaning that the number of painted houses is a constant number as many as the number of workers."
+    ],
+    "Summary Content": [
+      "As the total number of workers changes, the total number of houses painted also changes, meaning the two quantities covary.",
+      "The total number of houses painted by the total number of workers is constant, indicating that their relationship is multiplicatively invariant.",
+      "The relationship between the total number of workers and the total number of painted houses is proportional."
+    ]
+  }
+}

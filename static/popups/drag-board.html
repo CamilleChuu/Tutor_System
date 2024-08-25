@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resizable Rectangle</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .whiteboard {
+        position: relative;
+        width: 650px;
+        height: 450px;
+        background-color: white;
+        border: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .rectangle {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        width: 100px; /* 7 units wide */
+        height: 70px; /* 10 units high */
+        background-color: rgb(158, 228, 253);
+        cursor: nwse-resize;
+        border: 1px solid black; 
+    }
+    .rectangle:after {
+    content: ""; 
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 10px; 
+    height: 10px; 
+    background-color: red; 
+    border-radius: 50%;
+}
+    .size-info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: red;
+    }    
+    #history {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #ccc;
+        list-style-type: none;
+    }
+</style>
+</head>
+<body>
+<div class="whiteboard">
+    <div class="rectangle" id="rectangle"></div>
+</div>
+<div class="size-info" id="size-info">Size: 7x10</div>
+<ul id="history"></ul>
+
+<script>
+    const rectangle = document.getElementById('rectangle');
+    const historyList = document.getElementById('history');
+    const sizeInfo = document.getElementById('size-info');
+    let isResizing = false;
+    let startX, startY, startWidth, startHeight;
+
+    rectangle.addEventListener('mousedown', function (e) {
+        isResizing = true;
+        startX = e.clientX;
+        startY = e.clientY;
+        startWidth = parseInt(document.defaultView.getComputedStyle(rectangle).width);
+        startHeight = parseInt(document.defaultView.getComputedStyle(rectangle).height);
+    });
+
+    window.addEventListener('mousemove', function (e) {
+        if (!isResizing) return;
+        let width = startWidth + (e.clientX - startX);
+        let height = startHeight + (e.clientY - startY);
+        
+        // Constrain width and height to integers
+        width = Math.round(width / 10) * 10;
+        height = Math.round(height / 10) * 10;
+        
+        // Ensure width is at least 3 units larger than height
+        if (width != height + 3 * 10) {
+            width = height + 3 * 10;
+        }
+        if (width < 40) {
+            width = 40;
+        }
+        if (height < 10) {
+            height = 10;
+        }
+        if (width > 600) {
+            width = 600;
+            height = Math.round(600 / 10) * 10 - 3 * 10;
+        }
+        if (height > 400) {
+            height = 400;
+            width = Math.round(400 / 10) * 10 + 3 * 10;
+        }
+
+
+        rectangle.style.width = width + 'px';
+        rectangle.style.height = height + 'px';
+        
+        // Update size information
+        r_width = width/10;
+        r_height = height/10;
+        sizeInfo.textContent = `Size: ${r_width}x${r_height}`;
+    });
+
+    window.addEventListener('mouseup', function () {
+        isResizing = false;
+        addToHistory(r_width, r_height, new Date().toISOString());
+    });
+
+    // Function to add a position to the history
+    function addToHistory(width, height, timestamp) {
+    const listItem = document.createElement('li');
+    // listItem.textContent = `Width: ${r_width}, Height: ${r_height}, Timestamp: ${timestamp}`;
+    listItem.textContent = `Width: ${r_width}, Height: ${r_height}, Difference=3.`;
+    historyList.appendChild(listItem);
+}
+</script>
+</body>
+</html>

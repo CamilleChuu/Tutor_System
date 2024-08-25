@@ -1,0 +1,35 @@
+{
+  "Auctioning Paintings": {
+    "Introduction": ["In this activity, we will use the key aspects of proportionality to determine if a given situation is proportional."],
+    "Stage1": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM4/CK-SM4-7.2.a.i_Auctioning_Paintings.png)",
+        "Pablo is a renowned painter. At a recent auction, one of Pablo’s paintings sold for $12,000. After selling this painting, Pablo decided to sell more of his paintings at the auction, one by one. Is the relationship between the number of paintings he sold and the total amount he received proportional? Explain why or why not."
+      ],
+      "Expectation1": {
+        "Expectation": "As the number of paintings he sold changes, the total amount he receives also changes, meaning the two quantities covary.",
+        "Hint1": "When the number of paintings he sold doubles or triples, what happens to the total amount he received? What does this tell you about the key aspects of proportionality?",
+        "Hint2": "Remember that the selling price for one painting is $12,000. If Pablo sells more paintings, will the total amount he receives also change? What does this tell you about the key aspects of proportionality?"
+      },
+      "Expectation2": {
+        "Expectation": "The total amount he received per the number of paintings he sold is not constant, indicating their relationship is not multiplicatively invariant.",
+        "Hint1": "Recall that Pablo sold one painting for $12,000 at an auction. Do you think each additional painting will be sold for the same amount at auction? What does this tell you about the key aspects of proportionality?",
+        "Hint2": "Remember, Pablo sold one painting for $12,000 at an auction and then decided to sell more of his paintings. Because the next painting is different from the previous one and buyers at the auction could be different, the next painting might be sold for a different amount at auction. Based on this information, what does this tell you about the key aspects of proportionality?"
+      },
+      "Expectation3": {
+        "Expectation": "The relationship between the number of paintings sold and the total amount he receives is not proportional.",
+        "Hint1": "Recall the key aspects of proportionality—covariance and multiplicative invariance. In this situation, as the number of paintings Pablo sold changes, does the total amount he receives also change? Additionally, is the total amount he receives per the number of paintings sold constant? Based on your answer to these two questions, what can you say about the type of relationship between the number of paintings he sold and the total amount he received?",
+        "Hint2": "Actually, as the number of paintings sold changes, the total amount he receives also changes. However, even though Pablo sold one painting for $12,000, we do not know whether he could sell each painting at the same price, because each painting is different. Based on this information, is the relationship between the number of paintings sold and the total selling price proportional?"
+      }
+    },
+    "Closing": [
+      "openNewImage(./static/images/image-CKSM4/CK-SM4-7.3.a_Auctioning_Paintings.png)",
+      "To determine if a relationship between quantities is proportional, it must have two features: (1) covariance and (2) multiplicative invariance. In this activity, the relationship between the number of paintings sold and the total amount Pablo receives is not proportional. This is because, even though Pablo sold one painting for $12,000, it is unlikely that each painting will be sold for the same price because each painting is different and buyers at the auction might be different. This means that the quotient of any non-zero pairs of the two quantities might not be constant, indicating that the total amount he receives might not be a constant multiple of the number of paintings sold."
+    ],
+    "Summary Content": [
+      "As the number of paintings he sold changes, the total amount he receives also changes, meaning the two quantities covary.",
+      "The total amount he received per the number of paintings he sold is not constant, indicating their relationship is not multiplicatively invariant.",
+      "The relationship between the number of paintings sold and the total amount he receives is not proportional."
+    ]
+  }
+}

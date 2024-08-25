@@ -1,0 +1,27 @@
+{"Using More Candles":{
+    "Introduction":"In this activity, we will use the key aspects of proportionality to determine if a given situation is proportional.",
+    "Prompt":[
+        "John bought two identical candles, Candle A and Candle B. When he gets home, he lights Candle A. A few minutes later, John lights Candle B. Each candle is burning at a constant rate. John left for a few minutes and when he came back, he noticed that Candle A had burned a length of 16 mm and Candle B had burned a length of 10 mm. Is the relationship between the length that Candle A has burned and the length that Candle B has burned proportional? Explain why or why not.",
+        "openNewImage(./static/images/image-SM4/Using More Candles Intro Image.png)"
+    ],
+    "Expectation1":{
+        "Expectation":"As the length that Candle A has burned changes, the length that Candle B has burned also changes, meaning the two quantities covary.",
+        "Hint1":"When the length that Candle A has burned doubles, does the length that Candle B has burned stay the same or change? What does this tell you about the key aspects of proportionality?",
+        "Hint2":"Recall that John noticed when the length that Candle A has burned is 16 mm, the length that Candle B has burned is 10 mm. With this in mind, when the length that Candle A has burned is 32 mm, what happens to the length that Candle B has burned? What does this tell you about the key aspects of proportionality?"
+    },
+    "Expectation2":{
+        "Expectation":"The length that Candle A has burned per the length that Candle B has burned is not constant, indicating the quotient of any non-zero pairs of quantities is not invariant.",
+        "Hint1":"Recall that John lights Candle B a few minutes after he lights Candle A. Based on this information, what can you say about the ratio of the length that Candle A has burned to the length that Candle B has burned, at different time points? What does this tell you about the key aspects of proportionality?",
+        "Hint2":"Remember Candle B started burning after Candle A. This means that there is a time when Candle B has not started burning and Candle A had already started burning some of its length. What does this mean for the quotient of any non-zero pars of the length of the amount of burned Candle A has burned and the length that Candle B has burned? What does this tell you about the key aspects of proportionality?"
+    },
+    "Expectation3":{
+        "Expectation":"The relationship between the length that Candle A has burned and the length that Candle B has burned is not proportional.",
+        "Hint1":"Recall the key aspects of proportionality-covariance and invariance. In this situation, does the length that Candle A has burned and the length that Candle B has burned change together? Also, is the quotient of the length that Candle A has burned and the length that Candle B has burned constant? Based on your answer to these two questions, what can you say about the type of relationship between the length that Candle A has burned and the length that Candle B has burned?",
+        "Hint2":"Actually, as the length that Candle A has burned changes, the length that Candle B has burned also changes. However, since the candles started burning at different times, the quotient of any non-zero pair of the two lengths is not constant.  Based on this information, is the relationship between the type length that Candle A has burned and the length that Candle B has burned proportional?"
+    },
+    "Conclusion":[
+        "openNewImage(./static/images/image-SM4/Using More Candles Summary Image.png)",
+        "To determine if a relationship between quantities is proportional, it must have two properties: (1) covariance and (2) invariance. In this activity, we see how the relationship between the length that Candle A has burned and the length that Candle B has burned is not proportional. Even though the lengths that each candle has burned change together since the candles are lit at different times, the quotient of the length that Candle A has burned and the length that Candle B has burned is not constant."
+    ]
+    }
+}

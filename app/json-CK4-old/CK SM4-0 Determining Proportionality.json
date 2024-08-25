@@ -1,0 +1,57 @@
+{"Determining Proportionality":{
+    "Introduction":"In this activity, we will revisit the Stacking Paper Activity and determine if a relationship is proportional using the two key features of proportionality.",
+    "Stage 1":{
+        "Prompt": [
+            "openNewImage(./static/images/image-SM4/1k91Gw5iP3nvT1HNesfyARuLuDQLLJtTD.png)",
+            "Recall the context of the Stacking Paper activity: \"The local paper store is stacking identical sheets of paper and collecting data for packaging. The graph represents the relationship between the number of sheets of paper and the height of the stack of paper in centimeters.\" <br><br> Previously, we determined that the relationship between the number of sheets of paper and the height of the stack of paper is proportional. To determine proportionality, the relationship between two quantities should have two features—covariance and invariance. When working through Submodule 4 (Proportionality), it is critical that you explain why a situation is or is not proportional based on whether the situation displays covariance and invariance. You can find definitions of these terms in the glossary. <br><br> Before working through the activities in Submodule 4 (Proportionality), let's look at ways to describe covariance and invariance using the Stacking Paper context.",
+            "First, let's think about how to check for covariance when determining if a situation is or is not proportional. Covariance implies that two quantities change together, meaning as one quantity changes, another quantity also changes. Use the textbox to brainstorm how you would describe covariance in this situation. When you’re finished, hit submit.",
+            "openTextEditor()"],
+        "Muliple Choice Quetsion": "Which of the following explanations BEST describes the role of covariance in this situation?",
+        "Options/Feedback":{
+            "Option1": {
+                "Option":"The two quantities covary because when the number of sheets of paper decreases, the height of the stack of paper increases.",
+                "Feedback": "Not really. You're right that the quantities covary but look at the graph to infer how these two quantities change together. Please try again."
+                },
+            "Option2": {
+                "Option": "The two quantities covary because when the number of sheets of paper increases, the height of a stack of paper decreases.",
+                "Feedback":"Not really. You're right that the quantities covary but look at the graph to infer how these two quantities change together. Please try again."
+                },
+            "Option3":{
+                "Option": "We don't know if covariance holds because there is too much missing information in this problem.",
+                "Feedback": "Not really. Covariance means that as one quantity changes the other quantity also changes. Look back at the graph and notice how the height of a stack of paper changes as the number of sheets of paper also changes. Please try again."
+            },
+            "Option4":{
+                "Option":"The two quantities covary, because when the number of sheets of paper increases, the height of a stack of paper also increases.",
+                "Feedfback":"Well done! This description correctly identifies the quantities as covarying and accurately describes how the number of sheets of paper and the height of a stack of paper change together."
+            }}},
+    "Stage 2":{
+        "Prompt":[
+            "openNewImage(./static/images/image-SM4/1k91Gw5iP3nvT1HNesfyARuLuDQLLJtTD.png)",
+            "Next, let's think about how to check for invariance when determining if a situation is or isn't proportional. Invariance implies that the quotient of two quantities is constant for any non-zero pair of covarying quantities that are measured in the same way. <br><br> Use the textbox to brainstorm how you would describe invariance in this situation. When you are finished, hit \"submit.\"",
+            "openTextEditor()"],
+        "Muliple Choice Quetsion": "Which of the following explanations BEST describes the role of invariance in this situation?",
+        "Options/Feedback":{
+            "Option1": {
+                "Option":"Since the height of 20 sheets of paper is 1 cm and 40 sheets of paper is 2 cm. For both coordinated pairs, the quotient of the height of a stack of paper and the number of sheets of paper is 1/20, indicating the quotient is invariant.",
+                "Feedback":"Not really. While you're right that the quotient is invariant, this should be noted for all non-zero paired quantities, not just two points. Check whether invariance holds in all non-zero paired values and please try again."
+                },
+            "Option2":{
+                "Option": "The information provided is not sufficient to make a determination about whether or not the quotient of the height of a stack of paper and the number of sheets of paper is invariant.",
+                "Feedback":"Not really. Invariance means that the quotient of two quantities is constant for all non-zero pairs. As you look at the graph, notice how all the non-zero pairs of the height of a stack of paper and the number of sheets of paper are in a straight line. Observing each point, you can check the quotient by dividing the height of a stack of paper by the number of sheets of paper. Based on this information, what do you notice about the quotient of all non-zero pairs of the two quantities? Please try again."
+                },
+            "Option3":{
+                "Option":"Since the quotient of all non-zero pairs is 1/20, according to the graph, the ratio between the amount of paper and the height of a stack of paper is invariant.",
+                "Feedback":"Correct! Invariance implies that the quotient of two quantities is constant and since each non-zero pair on the graph has the same ratio of paper height to the number of sheets of paper, the quotient of the two quantities is invariant."
+                }}},
+    "Closing":[
+        "openNewImage(./static/images/image-SM4/Summary-StockingPaper.png)",
+        "To determine if the relationship between two quantities is proportional, it's important to identify if the two quantities covary and if their quotient is invariant. From the graph we can see how the two quantities covary because as the number of sheets of paper increases, the height of a stack of paper also increases, meaning the two quantities change together. Additionally, we can see how the quotient of any non-zero pairs of the height of a stack of paper and the number of sheets of paper is constant, meaning the quotient of the two quantities is invariant. Based on these two features, we can say that the relationship between the number of sheets of paper and the height of a stack of paper is proportional. <br><br> Also, before continuing with Submodule 4 (Proportionality), recall that in this program, we use the terms \"proportional\" and \"directly proportional\" interchangeably. This means that when you are asked a question like, \"Is the relationship between Quantity A and Quantity B proportional?\" It is just like being asked, \"Is the relationship between Quantity A and Quantity B directly proportional?\""
+        ],
+    "Summary":[
+        "a. In this program, we use \"proportional\" and \"directly proportional\" interchangeably.",
+        "b. There are two key aspects that determine if a relationship between two quantities is proportional-covariance and invariance.",
+        "c. Covariance implies that two quantities change together, meaning as one quantity changes, another quantity also changes.",
+        "d. Invariance implies that the quotient of two quantities is constant for any non-zero pair of covarying quantities that are measured in the same way."
+        ]    
+    }
+}

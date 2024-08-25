@@ -1,0 +1,13 @@
+{
+  "SM 4 Reflection Activity": {
+    "Introduction": ["Let's take a moment to reflect on what you have learned in this submodule."],
+    "Stage1": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM4/CK-SM4-8.2.a.i_Reflection_Activity.png)",
+        "You just completed the fourth submodule! In this submodule, you worked on activities that highlighted using the key aspects of proportionality—covariance and multiplicative invariance—to determine if a given relationship between two quantities is proportional. For a relationship between two quantities to be proportional, as one quantity changes, the other quantity also changes. Also, the quotient of the two quantities is constant for any non-zero pairs of the two quantities, meaning that one quantity is always a constant multiple of the other quantity.<br><br>Reflect on what you learned from completing these activities and how you can incorporate what you learned into your teaching. Use the textbox to consider the following: (1) How would you describe the role of covariance and invariance to determine if a given situation is proportional? (2) How will you use this information in your teaching to support student understanding of ratios and proportional relationships?<br><br>Once you’ve finished your reflection, hit submit.",
+        "openTextEditor()"
+      ]
+    },
+    "Closing": "You have completed this submodule. Next, let's check what you have learned in this submodule!"
+  }
+}

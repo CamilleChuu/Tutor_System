@@ -1,0 +1,12 @@
+{"SM 1 Reflection Activity":{
+  "Introduction":["Let's take a moment to reflect on what you have learned in this module."],
+  "Stage1":{
+    "Prompt":[
+      "openNewImage(./static/images/image-CKSM1/CKSM1.5.2.a_Reflection_Activity.png)",
+      "You just completed the first submodule! In this submodule, you worked on activities that highlight the importance of characterizing the relationship between two quantities through multiplicative comparisons, as opposed to additive comparisons.<br><br>Reflect on what you learned from completing these activities and how you can incorporate what you learned into your teaching. Use the textbox to consider the following: (1) What are your main takeaways about multiplicative and additive comparisons? (2) How will you use this information in your teaching to support student understanding of ratios and proportional relationships?<br><br>Once you’ve finished your reflection, hit submit.",
+      "openTextEditor()"
+    ],
+    "Closing": "You have completed this submodule. Next, please take the quiz."
+  }
+  }
+}

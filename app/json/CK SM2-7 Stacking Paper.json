@@ -1,0 +1,41 @@
+{
+    "Stacking Paper": {
+        "Introduction": [
+            "In this activity, we will practice determining the relationship between two quantities on a graph and finding an equation that represents such a relationship."
+        ],
+        "Stage1": {
+            "Prompt": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-7.2.a.i_Stacking_Paper.png)",
+                "The local paper store is stacking identical sheets of paper and collecting data for packaging. The graph represents the relationship between the number of sheets of paper and the height of the stack of paper in centimeters. How can you characterize the relationship between these two quantities? Explain your reasoning using the information represented in the graph."
+            ],
+            "Expectation1": {
+                "Expectation": "The relationship is proportional because the height of the paper stack is constant per number of sheets.",
+                "Hint1": "By looking at the graph, what is happening to the height of the stack when the number of sheets increases? Also, think about what stays the same in their relationship. Based on this information, how would you describe the relationship between the two quantities shown in this graph?",
+                "Hint2": "The graph shows that the relationship between the number of sheets of paper and the height of the stack changes together. Now, let’s examine whether the height of the paper stack per number of sheets remains constant by checking each ordered pair. Based on your answer, what can you say about the relationship between the two quantities? Explain your reasoning."
+            }
+        },
+        "Stage2": {
+            "Prompt": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-7.3.a.i_Stacking_Paper.png)",
+                "Now, let’s think about how we can write an equation to represent the relationship between the height of the stack of paper (h) and the number of sheets of paper (s). Complete the equation using the provided tool, and explain how you know your answer is correct in the chat window.<br><br><ul><li>h = [      ]</li><ul>",
+                "openEquation1()"
+            ],
+            "Expectation1": {
+                "Expectation": "h=(1/20)s, h=0.05s, or any equivalent equations because the unit rate is 1/20. <b>OR</b>, the relationship is proportional, and the constant of proportionality is 1/20.",
+                "Hint1": "Remember that this equation expresses the relationship between the height of sheets of paper in the stack (h) and the number of sheets (s). You have already characterized the relationship between these two quantities. As the number of sheets increases, the height increases. Yet, their ratio (quotient) stays constant across different values. Think about how to use this information to generalize the relationship for any number of sheets (s) to find the corresponding height (h). Revise your answer based on this information and try again.",
+                "Hint2": "The equation you construct should accurately represent the ordered pairs, ensuring that when you input any value for the number of sheets of paper (s), the equation yields the corresponding height (h) as shown on the graph. The constant of proportionality, which is the constant ratio between these two quantities, can be determined by dividing the height by the number of sheets. Consider the ordered pairs such as (20, 1), (40, 2), and (60, 3). Using this information, revise your equation accordingly and explain your reasoning."
+            }
+        },
+        "Closing": [
+            "openNewImage(./static/images/image-CKSM2/CK-SM2-7.4.a_Stacking_Paper.png)",
+            "By observing the graph, we can determine if the relationship between the height of the stack of paper and the number of sheets of paper is proportional by checking two things. First, they change together, meaning as the number of sheets increases, the height of the stack also increases. Second, the quotient of all ordered pairs is constant, which means the height of the paper stack is always 1/20 times as many as the number of sheets of paper. This demonstrates multiplicative invariance, confirming that the relationship is proportional. This information helps us write an equation representing this relationship in the form of y=kx, where k is the constant of proportionality, such that h=(1/20)s."
+        ],
+        "Summary Content": [
+            "Two key aspects of proportional relationships are covariance and multiplicative invariance.",
+            "In proportional relationships, one quantity is a constant multiple of another quantity.",
+            "In proportional relationships, the quotient of two quantities is constant.",
+            "The constant of proportionality is the value of a unit rate and can be found by dividing the value of quantity y by the corresponding value of quantity x.",
+            "Equations of proportional relationships are of the form y=kx, where k is the constant of proportionality, which is the value of a unit rate."
+        ]
+    }
+}

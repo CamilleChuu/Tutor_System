@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            width: 800px; /* Adjust the width as needed */
+            margin: auto;
+        }
+        .calculator {
+            width: 400px;
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+        }
+        .history {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            overflow-y: auto; /* Add scrollbar for overflow */
+        }
+        .history-title {
+            font-weight: bold;
+        }
+        .history-item {
+            margin-top: 5px;
+        }
+        input[type="text"] {
+            width: calc(50%);
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        input[type="button"] {
+            width: 10%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <br>
+            <input type="button" value="(" onclick="appendToDisplay('&#40')">
+            <input type="button" value=")" onclick="appendToDisplay('&#41')">
+            <input type="button" value="%" onclick="appendToDisplay('%')">
+            <input type="button" value="." onclick="appendToDisplay('.')">
+            <br>
+            <input type="button" value="1" onclick="appendToDisplay('1')">
+            <input type="button" value="2" onclick="appendToDisplay('2')">
+            <input type="button" value="3" onclick="appendToDisplay('3')">
+            <input type="button" value="+" onclick="appendToDisplay('+')">
+            <br>
+            <input type="button" value="4" onclick="appendToDisplay('4')">
+            <input type="button" value="5" onclick="appendToDisplay('5')">
+            <input type="button" value="6" onclick="appendToDisplay('6')">
+            <input type="button" value="-" onclick="appendToDisplay('-')">
+            <br>
+            <input type="button" value="7" onclick="appendToDisplay('7')">
+            <input type="button" value="8" onclick="appendToDisplay('8')">
+            <input type="button" value="9" onclick="appendToDisplay('9')">
+            <input type="button" value="*" onclick="appendToDisplay('*')">
+            <br>
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="0" onclick="appendToDisplay('0')">
+            <input type="button" value="=" onclick="calculate()">
+            <input type="button" value="/" onclick="appendToDisplay('/')">
+        </div>
+        <div class="history" id="history"></div>
+    </div>
+
+    <script>
+        let equation = '';
+        let history = [];
+        let calculated = false;
+
+        function appendToDisplay(value) {
+            if (calculated && !(value === '+' || value === '-' || value === '*' || value === '/' )) {
+                document.getElementById('display').value = '';
+                equation = '';
+                calculated = false;
+            }
+            document.getElementById('display').value += value;
+            if (value === '+' || value === '-' || value === '*' || value === '/' ) {
+                equation += value;
+            }
+            calculated = false;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+            equation = '';
+            calculated = false;
+        }
+
+        function calculate() {
+            var expression = document.getElementById('display').value;
+            try {
+                expression_tmp = expression.replace(/%/g, '*0.01');
+                var result = eval(expression_tmp).toFixed(3);
+                document.getElementById('display').value = result;
+                equation = result.toString();
+                calculated = true;        
+                const timestamp = new Date().toISOString();    
+                history.push({ expression, result,  timestamp});
+                updateHistory();
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+                equation = '';
+            }
+        }
+
+        function updateHistory() {
+            const historyDiv = document.getElementById('history');
+            historyDiv.innerHTML = '<strong>History:</strong><br>';
+            history.forEach(item => {
+                const expression = item.expression;
+                const result = item.result;
+                const timestamp = item.timestamp;
+                const historyItem = document.createElement('div');
+                historyItem.textContent = `${expression} = ${result}; Time = ${timestamp}`;
+                historyDiv.appendChild(historyItem);
+            });
+        }
+    </script>
+</body>
+</html>

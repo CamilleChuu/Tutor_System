@@ -1,0 +1,56 @@
+{
+    "Speed Walking": {
+        "Introduction": [
+            "In this activity, we will explore relationships between two quantities by reading information from a table and applying it to a graph."
+        ],
+        "Stage1": {
+            "Prompt": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-5.2.a.i_Speed_Walking.png)",
+                "John and Amy are speed walkers. The two tables represent the relationship between total distance and elapsed time when John and Amy are walking.",
+                "Using the provided graph tool, please create a graph to represent the relationship between total distance (y) and elapsed time (x) for both John and Amy. When you are done with creating graphs, please click the SUBMIT button.",
+                "openTwoLine()"
+            ],
+            "Expectation1": {
+                "Expectation": "Entered two ordered pairs for both graphs are correct. In both graphs, x axis should represent seconds while y axis should represent meters. (For John, any combination of the following ordered pairs is correct: (2,3), (4,6), (6,9), (8,12), (10,15), and (12,18). For Amy, any two ordered pairs selected from the following are correct: (3,4), (6,8), (9,12), and (12,16).)",
+                "Hint1": "The two ratio tables show how the total distance (y) changes with time elapsed (x). A graph visualizes how these two variables change together. Pay attention to the ordered pairs while creating the graphs.",
+                "Hint2": "Check that your ordered pairs are correctly entered into the graph based on the data in the tables. Revise your answer and submit your work."
+            }
+        },
+        "Stage2": {
+            "Prompt": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-5.3.a.i_Speed_Walking.png)",
+                "Now, let’s look at the tables and graph for both John and Amy. Based on the pattern you noticed in the relationship, determine how far John and Amy will speed walk in 36 seconds. Explain why your strategy works."
+            ],
+            "Expectation1": {
+                "Expectation": "Since the relationship between the total walking distance and elapsed time is proportional, strategies involving unit rates and equivalent ratios could lead to the correct answer. The unit rate for John is 3/2, and for Amy it is 4/3. <b>OR</b>, since equivalent ratios can be created by multiplying or dividing by the same scale factor, a strategy involving the use of scale factors would lead to the correct answer.",
+                "Hint1": "Let’s look at the relationship between the distance covered and elapsed time. Check out the distance per second John and Amy cover. Does this change over time, or does it remain constant regardless of the time elapsed? Using this information, think about how you could determine the walking distances that both John and Amy would cover in 36 seconds.",
+                "Hint2": [
+                    "openNewImage(./static/images/image-CKSM2/CK-SM2-5.3.b.iii_Speed_Walking.png)",
+                    "Let’s check the relationship between walking distance and elapsed time for both John and Amy. If the walking distance covered per second, or the unit rate, remains constant, this indicates a proportional relationship. The new tables show the unit rates for both John and Amy. Examine other pairs as well to see if the unit rates remain constant at all time points. Based on the information, how can you determine the walking distance for John and Amy at 36 seconds?"
+                ]
+            },
+            "Stage 3":
+            {
+                "Prompt": [
+                    "openNewImage(./static/images/image-CKSM2/CK-SM2-5.4.a.i_Speed_Walking.png)",
+                    "Without looking at the values on the graph, how can you determine who is walking faster? Explain your reasoning."
+                ],
+                "Expectation1": {
+                    "Expectation": "John is walking faster because the line for John is steeper, indicating that the distance covered per second is larger.",
+                    "Hint1": "Think about which aspect of the lines represents John’s and Amy’s walking speed, and try again.",
+                    "Hint2": "Consider what the slope indicates in these graphs. Based on this, who do you think is walking faster, and why?",
+                    "Hint3": "The slope indicates the distance covered per second in this problem. John’s speed is 3/2=1.5, and Amy’s is  4/3=1.33. Think about how the steepness of the slope is related to their speed, and revise your answer."
+                }
+            },
+            "Closing": [
+                "openNewImage(./static/images/image-CKSM2/CK-SM2-5.5.a_Speed_Walking.png)",
+                "When solving problems involving ratios and proportional relationships, we need to reason multiplicatively. For instance, in this activity, the walking distance for John and Amy at 36 seconds can be determined by scaling (i.e., multiplying both terms of the ratio by the same number) or by employing the unit rate (i.e., 3/2 for John and 4/3 for Amy). Additionally, the steepness of each line on the graph is directly related to the unit rate, or constant of proportionality. Therefore, in this context, we can see that the steeper the line on a graph, the faster the person is walking, which means the greater the unit rate."
+            ],
+            "Summary Content": [
+                "Unit rates and scale factors can be used to find equivalent ratios in ratio tables and graphs.",
+                "The unit rate, or constant of proportionality, equals the slope.",
+                "Graphs help visualize relationships between two quantities and help compare various proportional relationships."
+            ]
+        }
+    }
+}

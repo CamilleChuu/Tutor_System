@@ -1,0 +1,41 @@
+{
+  "Determining Proportionality": {
+    "Introduction": ["In this activity, we will revisit the Stacking Paper Activity and determine if a relationship is proportional by using the two key features of proportionality."],
+    "Stage1": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM4/CK-SM4-0.2.a.i_Determining_Proportionality.png)",
+        "Let's revisit the Stacking Paper activity you worked on previously: \"The local paper store is stacking identical sheets of paper and collecting data for packaging. The graph represents the relationship between the number of sheets of paper and the height of the stack of paper in centimeters.\"<br><br>Previously, we determined that the relationship between the number of sheets of paper and the height of the stack of paper is proportional. To determine proportionality, the relationship between two quantities should have two features—covariance and multiplicative invariance. When working through this submodule, it is critical that you explain why a situation is or is not proportional based on whether the situation displays covariance and multiplicative invariance. You can find definitions of these terms in the glossary.<br><br>Let’s practice how to analyze situations by focusing on covariance and multiplicative invariance.<br><br>First, let’s start with covariance! Covariance implies that two quantities change together, meaning as one quantity changes, another quantity also changes. <b>Based on the information in the graph, please describe whether covariance exists between the number of sheets of paper and the height of the stack of paper and explain your reasoning.</b>"
+      ],
+      "Expectation1": {
+        "Expectation": "The two quantities covary, because when the number of sheets of paper changes, the height of the stack of paper also changes. <b>OR</b>, the two quantities covary, because when the number of sheets of paper increases, the height of the stack of paper also increases.",
+        "Hint1": "Covariance means that as one quantity changes, the other quantity also changes. In this context, when the number of sheets of paper increases, does the height of the stack of paper increase, decrease, or stay the same? Look back at the graph and tell us what you notice about the relationship between the two quantities.",
+        "Hint2": "Now, let's examine some ordered pairs on the graph: (20, 1), (40, 2), and (60, 3). As the number of sheets of paper increases from 20 to 40, to 60, what happens to the height of the paper stack? Do they change together?  Explain your reasoning."
+      }
+    },
+    "Stage2": {
+      "Prompt": [
+        "openNewImage(./static/images/image-CKSM4/CK-SM4-0.3.a.i_Determining_Proportionality.png)",
+        "Next, let's think about how to check for multiplicative invariance when determining if a situation is proportional. Multiplicative invariance implies that the quotient of two quantities is constant for any non-zero pair of covarying quantities that are measured in the same way. This means that regardless of the quantities involved, one quantity is always a fixed multiple of the other quantity, such as <i>y/x=k</i> or <i>y=kx</i> where <i>y</i> is <i>k</i> times as much as <i>x</i>.<br><br><b>Based on the graph, what can you say about multiplicative invariance? Please explain your reasoning.</b>"
+      ],
+      "Expectation1": {
+        "Expectation": "Since the quotient of all non-zero pairs is 1/20, according to the graph, the relationship between the number of sheets and the height of the paper stack is multiplicatively invariant. <b>OR</b>, since the height of the paper stack is always 1/20 as much as the number of sheets regardless of the number of sheets included, their relationship is multiplicatively invariant.",
+        "Hint1": "If the quotient of two quantities is constant for all non-zero pairs, the relationship demonstrates multiplicative invariance. As you look at the graph, think about how the quotients of the ordered pairs change or remain the same as the number of sheets changes. What does this tell you about the relationship between the number of sheets and the height of the paper stack? Explain your reasoning.",
+        "Hint2": [
+          "In this context, multiplicative invariance means that regardless of number of sheets included, the height of the stack of paper per the number of sheets is constant. Calculate the quotient for several ordered pairs, such as (20, 1), (40, 2), and (60, 3), by dividing the height of the stack of paper by the number of sheets. What do you notice about the height of the paper stack in relation to the number of sheets? Explain your reasoning.",
+          "openPopupCalculator()"
+        ],
+        "Hint3": "We can determine if multiplicative invariance exists between two quantities if the amount of one quantity is constant multiple of the other quantity regardless of the amount involved.  Look at the ordered values shown in the graph. For example, for the ordered pair of (20, 1), (40, 2), and (60, 3), the height of the paper stack is consistently 1/20 times as much as the number of sheets. Using this information, explain the relationship between the amount of paper and the height of the stack of paper, providing your reasoning."
+      }
+    },
+    "Closing": [
+      "openNewImage(./static/images/image-CKSM4/CK-SM4-0.4.a_Determining_Proportionality.png)",
+      "To determine if the relationship between two quantities is proportional, it's important to identify if the two quantities covary and if their quotient is invariant. From the graph we can see how the two quantities covary because as the number of sheets of paper increases, the height of the stack of paper also increases, meaning the two quantities change together. Additionally, we can see how the quotient of any non-zero pairs of the height of the stack of paper and the number of sheets of paper is constant, meaning that the height of the paper stack is 1/20 times as many as the number of sheets of paper (i.e., multiplicatively invariant). Based on these two features, we can say that the relationship between the number of sheets of paper and the height of a stack of paper is proportional.<br><br>Also, before continuing with this submodule, remember that we use the terms \"proportional\" and “directly proportional” interchangeably. This means that when you are asked \"Is the relationship between Quantity A and Quantity B proportional?\", we ask: \"Is the relationship between Quantity A and Quantity B directly proportional?\""
+    ],
+    "Summary": [
+      "In this program, we use \"proportional\" and \"directly proportional\" interchangeably.",
+      "There are two key aspects that determine if a relationship between two quantities is proportional—covariance and multiplicative invariance.",
+      "Covariance implies that two quantities change together, meaning as one quantity changes, another quantity also changes.",
+      "Multiplicative invariance implies that their quotient is constant for any non-zero pair of quantities, meaning that one quantity is always a constant multiple of the other quantity."
+    ]
+  }
+}

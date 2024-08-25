@@ -1,0 +1,28 @@
+{"Building a House":{
+    "Introduction":"In this activity, we will use the key aspects of proportionality to determine if a given situation is proportional.",
+    "Prompt":"Elena runs a construction company and has several identical houses that must be painted today! In her company, all the workers paint at the <i>same</i> rate and she knows that 6 workers can paint one house in 7 hours. Is the relationship between the number of workers and the time to paint the house proportional? Explain why or why not.",
+    "Expectation1":{
+        "Expectation":"As the number of workers changes, the time it takes to paint a house also changes, meaning the two quantities covary.",
+        "Hint1":"As the number of workers changes, how does the time it takes to paint the houses also change? What does this tell you about the key aspects of proportionality?",
+        "Hint2":"If Elena doubles the number of workers assigned to paint the house, do you think the time it takes to paint the house changes or stays the same? What does this tell you about the key aspects of proportionality?"
+    },
+    "Expectation2":{
+        "Expectation":"The amount of time it takes to paint the houses for the number of workers is not constant, meaning the quotient of any non-zero pairs of quantities is not invariant.",
+        "Hint1":[
+            "Recall that Elena knows 6 workers can paint the houses in 7 hours. If she doubles the number of workers, all of whom work at the same rate, how does the amount of time to paint the house change? Use the textbox to think through this scenario.",
+            "openTextEditor()",
+            "Based on this information, what can you say about the total time taking to paint houses per the total number of workers? What does this tell you about the key aspects of proportionality?"
+        ],
+        "Hint2":"Elena knows that 6 workers can paint the house in 7 hours. If she doubles the number of workers who work at the same rate, it will take the half amount of the total time to painting the houses (i.e., 12 workers takes 3.5 hours to paint the house). This means an increase in workers will cause a decrease in time to paint the house. Based on this information, is the quotient of the total hours by the total number of workers in both situations the same? What does this tell you about the key aspects of proportionality?"
+    },
+    "Expectation3":{
+        "Expectation":"The relationship between the number of workers and the total time it takes to paint a house is not proportional.",
+        "Hint1":"Recall the key aspects of proportionality-covariance and invariance. In this situation, does the number of workers and the number of hours it takes to paint the house change together? Also, is the total number of days per the total number of workers constant? Based on your answer to these two questions, what can you say about the type of relationship between the number of workers and time it takes to paint a house?",
+        "Hint2":"Actually, the total number of workers determines how long it will take these workers to paint the houses. The more workers, the less time it takes to paint, which makes the quotient of these two quantities not constant. Based on this information, is the relationship between the total number of identical workers and the total time proportional?"
+    },
+    "Conclusion":[
+        "openNewImage(./static/images/image-SM4/Building a House Summary Image.png)",
+        "To determine if a relationship between two quantities is proportional, it must have two features: (1) covariance and (2) invariance. In this activity, the relationship between the number of workers and the time it takes to paint a house is not proportional because the total number of hours per the total number of workers is not constant for any non-zero pair of the two quantities. However, this situation is an example of an indirectly proportional relationship, which is characterized by two quantities having a constant product (i.e., the number of workers times the number of hours each worker paints is constantly equal to the total time it takes to paint the house)."
+    ]
+    }
+}
