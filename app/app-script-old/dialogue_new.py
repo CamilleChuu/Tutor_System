@@ -20,11 +20,12 @@ from .utils import llm_predict, llm_answer, symbol_control, find_match_in_senten
 # from .preprocessing import preprocess1, preprocess2
 from .ckprompt2 import initial_prompt, role_prompt, role_prompt2, inchat_prompt, expectation_prompt
 from .unreach_retrieve import get_unreach_records
-from .mykey import key
+# from .mykey import key
 
 #### envs for gpt ####
-os.environ["OPENAI_API_KEY"] = key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# os.environ["OPENAI_API_KEY"] = key
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+key = os.environ["OPENAI_API_KEY"]
 
 db = MongoClient('localhost', 27017)['tutor_sys']
 collection = db['demo']

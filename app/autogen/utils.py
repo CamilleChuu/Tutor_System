@@ -4,7 +4,7 @@ import signal
 import time, re, os, random
 import openai
 from openai import OpenAI
-from .mykey import key, keys
+# from .mykey import key, keys
 
 gpt_name = ["gpt-3.5-turbo-0125", "gpt-4-1106-preview", "gpt-4-0125-preview"][2]
 
@@ -39,7 +39,8 @@ def find_match_in_sentence(input_sentence, choices):
 def naive_llm_predict(messages, temperature = 0.5, max_tokens = 2, new=False):
     if new: gpt_name = "gpt-4o-2024-05-13"
     else: gpt_name = "gpt-4-1106-preview"
-    k = random.choice(keys)
+    # k = random.choice(keys)
+    k = os.environ["OPENAI_API_KEY"]
     # k = keys[1]
     client=OpenAI(api_key=k,)
     # client=OpenAI(api_key=key,)
