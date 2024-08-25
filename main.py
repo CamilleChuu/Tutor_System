@@ -41,7 +41,11 @@ def get_progress():
 
 @app.route('/test')
 def test():
-    return 'test'
+    try:
+        mongo.db.collection_name.find_one()
+        return "MongoDB connection successful!"
+    except Exception as e:
+        return str(e)
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
