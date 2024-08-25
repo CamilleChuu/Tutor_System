@@ -13,3 +13,4 @@ tqdm==4.66.1
 flaml==2.1.1
 diskcache==5.4.0
 python-dotenv==1.0.0
+tiktoken==0.2.0
