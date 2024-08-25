@@ -1,3 +1,5 @@
+const apiBaseUrl = 'https://tutor-system-app.herokuapp.com'; 
+
 function Register() {
     var left = (screen.width/2)-500;
     var top = (screen.height/2);
@@ -22,7 +24,8 @@ function Register() {
 
 function submitRegister(username, password, nickname) {
     $.ajax({
-        url: 'http://192.168.1.24:5001/register',
+        // url: 'http://192.168.1.24:5001/register',
+        url: '${apiBaseUrl}/register',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ "username": username, 'password': password, "nickname": nickname}),
@@ -37,7 +40,8 @@ function submitRegister(username, password, nickname) {
 
 function Login(username, password) {
     $.ajax({
-        url: 'http://192.168.1.24:5001/login',
+        // url: 'http://192.168.1.24:5001/login',
+        url: '${apiBaseUrl}/login',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ "username": username, 'password': password}),
