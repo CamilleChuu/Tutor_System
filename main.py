@@ -8,6 +8,7 @@ from app.session_generate import generate_session_id
 from app.account import register_account, login_account
 from app.progress import retrieve_progress
 from app.autogen.autogen_dialogue import process_input
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -104,6 +105,11 @@ def action_return():
     bot_output = action_saving(action_type, action_content, session_id)
     return jsonify(bot_output)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001, debug=True)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=5001, debug=True)
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5001))
+    app.run(host="0.0.0.0", port=port)
 
