@@ -43,10 +43,10 @@ def get_progress():
 def test():
     try:
         db = mongo.db
-        if not db:
+        if db is None:
             return "Failed to connect to the database. `mongo.db` is None."
         collection = db['collection_name']  
-        if not collection:
+        if collection is None:
             return "Failed to connect to the collection. `db['collection_name']` is None."
         collection.find_one()
         return "MongoDB connection successful!"
