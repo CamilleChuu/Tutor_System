@@ -127,6 +127,7 @@ def gpt_dialogue(_input = 'As the dimensions get larger, the ratios get closer t
             
         else: # target is None; end of the dialogue
             ## keep records
+            print("\nKeep Records?\n")
             user = db['session'].find_one({"session":session_id})['user']
             db['progress'].insert_one({'session':session_id, 'question':question, 'time':datetime.utcnow().timestamp(), 'user': user})
 

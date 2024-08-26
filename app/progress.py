@@ -28,8 +28,11 @@ question_dict = {
 }
 
 def retrieve_progress(username):
+    print("\nIn Retrieve Progress Function\n")
     questions = set()
     batch = collection.find({'user': username})
+    print("\nBatch:\n")
+    print(batch)
     for item in batch:
         questions.add(item['question'])
     return list(questions)
