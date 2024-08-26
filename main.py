@@ -45,13 +45,25 @@ def test():
         db = mongo.db
         if db is None:
             return "Failed to connect to the database. `mongo.db` is None."
-        collection = db['collection_name']  
+
+        collection_name = 'test_tutor'  
+        collection = db[collection_name]  
         if collection is None:
-            return "Failed to connect to the collection. `db['collection_name']` is None."
-        collection.find_one()
-        return "MongoDB connection successful!"
+            return f"Failed to connect to the collection `{collection_name}`. It is `None`."
+    
+        documents = collection.find()
+        docs_list = list(documents)
+        
+        if not docs_list:
+            return f"Connected to the collection `{collection_name}` but it is empty."
+        
+        docs_str = '\n'.join([str(doc) for doc in docs_list])
+        return f"Connected to the collection `{collection_name}`.\nDocuments:\n{docs_str}"
+    
     except Exception as e:
         return str(e)
+
+
 
 @app.route('/test_mongo_uri')
 def test_mongo_uri():
