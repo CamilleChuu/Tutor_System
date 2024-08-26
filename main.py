@@ -41,41 +41,6 @@ def get_progress():
     username = data.get('user')
     output = retrieve_progress(username)
     return output
-
-
-@app.route('/test')
-def test():
-    try:
-        db = mongo.db
-        if db is None:
-            return "Failed to connect to the database. `mongo.db` is None."
-
-        collection_name = 'account'  
-        collection = db[collection_name]
-        if collection is None:
-            return f"Failed to connect to the collection `{collection_name}`. It is `None`."
-    
-        documents = collection.find()
-        docs_list = list(documents)
-        
-        if not docs_list:
-            return f"Connected to the collection `{collection_name}` but it is empty."
-        
-        docs_str = '\n'.join([str(doc) for doc in docs_list])
-        return f"Connected to the collection `{collection_name}`.\nDocuments:\n{docs_str}"
-    
-    except Exception as e:
-        return str(e)
-
-
-
-@app.route('/test_mongo_uri')
-def test_mongo_uri():
-    try:
-        mongo_uri = os.getenv("MONGODB_URI")
-        return f"MongoDB URI: {mongo_uri}"
-    except Exception as e:
-        return str(e)
     
 @app.route('/register', methods=['POST', 'GET'])
 def register():
