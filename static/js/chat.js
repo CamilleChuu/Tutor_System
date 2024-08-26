@@ -85,7 +85,8 @@ function OpeningOutput(userInput) {
     document.getElementById('inputboxbutton').style.visibility = 'visible';
     $('#dialogueSection').empty();
     $.ajax({
-      url: 'http://149.28.76.168:5001/dialogue_open', // Make sure this matches the Flask app's URL and port
+      url: 'https://tutor-system-app-7c5441f65344.herokuapp.com/dialogue_open',
+      // url: 'http://149.28.76.168:5001/dialogue_open', // Make sure this matches the Flask app's URL and port
       type: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({ "question": question, "sessionID": session_id }),
@@ -128,7 +129,8 @@ function sendUserInput(userInput) {
   var question = localStorage.getItem('question');
   if (userInput.trim() !== '') {
     $.ajax({
-      url: 'http://149.28.76.168:5001/dialogue_new', // Make sure this matches the Flask app's URL and port
+      url: 'https://tutor-system-app-7c5441f65344.herokuapp.com/dialogue_new',
+      // url: 'http://149.28.76.168:5001/dialogue_new', // Make sure this matches the Flask app's URL and port
       type: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({ "userInput": userInput, 'question': question, "sessionID": session_id}),

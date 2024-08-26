@@ -2,8 +2,9 @@ function sendUserInput(userInput) {
     var session_id = localStorage.getItem('session_id');
     var question = localStorage.getItem('question');
     if (userInput.trim() !== '') {
-    $.ajax({
-        url: 'http://149.28.76.168:5001/dialogue_new', // Make sure this matches the Flask app's URL and port
+      $.ajax({
+        url: 'https://tutor-system-app-7c5441f65344.herokuapp.com/dialogue_new',
+        // url: 'http://149.28.76.168:5001/dialogue_new', // Make sure this matches the Flask app's URL and port
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ "userInput": userInput, 'question': question, "sessionID": session_id}),
@@ -57,9 +58,11 @@ function sendUserInput(userInput) {
                 document.getElementById('end_box').style.visibility = 'visible';
                 document.getElementById('inputboxbutton').style.visibility = 'hidden';
             };
+        },
         error: function(xhr, status, error) {
             console.error("Error: " + status + " " + error);
-        }
+        
         }
     });
-    }}
+    }
+  }

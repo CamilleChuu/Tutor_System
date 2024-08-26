@@ -1,7 +1,8 @@
 function GetSessionID(userInput, username) {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: 'http://149.28.76.168:5001/get_sessionid', 
+      url: 'https://tutor-system-app-7c5441f65344.herokuapp.com/get_sessionid',
+      // url: 'http://149.28.76.168:5001/get_sessionid', 
       type: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({"question": userInput, "user": username}),
@@ -58,7 +59,8 @@ function updateUsername() {
 function getProgress() {
   var user = localStorage.getItem('user');
     $.ajax({
-        url: 'http://149.28.76.168:5001/get_progress', 
+      url: 'https://tutor-system-app-7c5441f65344.herokuapp.com/get_progress',
+        // url: 'http://149.28.76.168:5001/get_progress', 
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({"user": user}), 
