@@ -175,9 +175,19 @@ def rephraser_block(question, session_id, user_input, message_tmp, expectations,
             hint_key_tmp = random.choice([e for e in hint_keys if e != last_hint])
         # hint_key_tmp = random.choice([e for e in hint_keys if e != last_hint])
 
-    for file in os.listdir('/var/www/tutor/app/json/rephrase'):
+    # for file in os.listdir('/var/www/tutor/app/json/rephrase'):
+    #     if question in file:
+    #         with open(os.path.join('/var/www/tutor/app/json/rephrase', file), 'r') as f: new_msg = json.load(f)
+    # hint_list_tmp = new_msg[list(new_msg.keys())[0]][stage_now]['Expectation'+str(target)][hint_key_tmp]
+    # hint_list_tmp = random.choice(hint_list_tmp)
+
+    rephrase_path = os.environ.get('REPHRASE_JSON_PATH', './app/json/rephrase')
+    
+    for file in os.listdir(rephrase_path):
         if question in file:
-            with open(os.path.join('/var/www/tutor/app/json/rephrase', file), 'r') as f: new_msg = json.load(f)
+            with open(os.path.join(rephrase_path, file), 'r') as f:
+                new_msg = json.load(f)
+                
     hint_list_tmp = new_msg[list(new_msg.keys())[0]][stage_now]['Expectation'+str(target)][hint_key_tmp]
     hint_list_tmp = random.choice(hint_list_tmp)
 
