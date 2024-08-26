@@ -135,6 +135,7 @@ def process_input(_input = 'As the dimensions get larger, the ratios get closer 
         if question in file:
             with open(os.path.join(path, file), 'r') as f:    message_tmp = json.load(f)
     message_tmp = message_tmp[list(message_tmp.keys())[0]] # get the main content
+    print(f"\nMessage_Tmp: {message_tmp}\n")
 
     # stages
     stage_keys = [k for k in message_tmp.keys() if 'Stage' in k]
@@ -150,6 +151,8 @@ def process_input(_input = 'As the dimensions get larger, the ratios get closer 
     expectations = ["""\"{}\":\"{}\"""".format(idx, sub_message_tmp['Expectation'+str(idx)]['Expectation']) for idx in range(1, len(exp_keys)+1)]
     expectations = "{" + ', '.join(expectations) + "}"
     true_expectations = ["""{}""".format(sub_message_tmp['Expectation'+str(idx)]['Expectation']) for idx in range(1, len(exp_keys)+1)]
+    print("\nTrue Expectations\n")
+    print(true_expectations)
 
     if True in [item.startswith("checkEquation(") for item in true_expectations]:
         expectation = true_expectations[0]
@@ -180,6 +183,8 @@ def process_input(_input = 'As the dimensions get larger, the ratios get closer 
             user_input = str(_input)
 
         query = main_input + '# Response: ' + str(user_input)
+        print("\nQuery\n")
+        print(query)
 
         run_one(query)
 
