@@ -39,6 +39,7 @@ def get_progress():
     output = retrieve_progress(username)
     return output
 
+
 @app.route('/test')
 def test():
     try:
@@ -46,8 +47,8 @@ def test():
         if db is None:
             return "Failed to connect to the database. `mongo.db` is None."
 
-        collection_name = 'test_tutor'  
-        collection = db[collection_name]  
+        collection_name = 'myCollection'  
+        collection = db[collection_name]
         if collection is None:
             return f"Failed to connect to the collection `{collection_name}`. It is `None`."
     
