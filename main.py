@@ -42,7 +42,13 @@ def get_progress():
 @app.route('/test')
 def test():
     try:
-        mongo.db.collection_name.find_one()
+        db = mongo.db
+        if not db:
+            return "Failed to connect to the database. `mongo.db` is None."
+        collection = db['collection_name']  
+        if not collection:
+            return "Failed to connect to the collection. `db['collection_name']` is None."
+        collection.find_one()
         return "MongoDB connection successful!"
     except Exception as e:
         return str(e)
