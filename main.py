@@ -13,7 +13,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 app.config["MONGO_URI"] = os.environ.get("MONGODB_URI")
-# app.config['MONGO_URI'] = 'mongodb://localhost:27017/test_tutor'  # Replace with your MongoDB connection URI
+# app.config['MONGO_URI'] = 'mongodb://localhost:27017/tutor_sys'  # Replace with your MongoDB connection URI
 mongo = PyMongo(app)
 
 @app.route('/')
@@ -47,7 +47,7 @@ def test():
         if db is None:
             return "Failed to connect to the database. `mongo.db` is None."
 
-        collection_name = 'myCollection'  
+        collection_name = 'account'  
         collection = db[collection_name]
         if collection is None:
             return f"Failed to connect to the collection `{collection_name}`. It is `None`."
