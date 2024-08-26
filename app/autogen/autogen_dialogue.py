@@ -44,15 +44,17 @@ today = datetime.now().strftime("%Y%m%d")
 
 gpt_name = "gpt-4-1106-preview"
 
-config_list_gpt4 = config_list_from_json(
-    "./app/autogen/notebook/OAI_CONFIG_LIST",
-    filter_dict={
-        "model": [gpt_name],
-    },
-)
+# config_list_gpt4 = config_list_from_json(
+#     "./app/autogen/notebook/OAI_CONFIG_LIST",
+#     filter_dict={
+#         "model": [gpt_name],
+#     },
+# )
 
-print("\nConfig List GPT4\n")
-print(config_list_gpt4)
+# print("\nConfig List GPT4\n")
+# print(config_list_gpt4)
+openai_api_key = os.getenv('OPENAI_API_KEY')
+config_list_gpt4 = [{'model': 'gpt-4-1106-preview', 'api_key': openai_api_key}]
 
 gpt4_config1 = {
     "cache_seed": 46,  # change the cache_seed for different trials
