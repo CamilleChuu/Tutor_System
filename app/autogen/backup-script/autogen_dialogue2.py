@@ -126,11 +126,21 @@ def process_input(_input = 'As the dimensions get larger, the ratios get closer 
         message=input)
         return 1
 
-    path = os.path.join('/var/www/tutor/app/json')
-    for file in os.listdir(path): 
+    # path = os.path.join('/var/www/tutor/app/json')
+    # for file in os.listdir(path): 
+    #     if question in file:
+    #         with open(os.path.join(path, file), 'r') as f:    message_tmp = json.load(f)
+    # message_tmp = message_tmp[list(message_tmp.keys())[0]]
+
+    json_path = os.environ.get('JSON_FILES_PATH', './app/json')
+
+    for file in os.listdir(json_path): 
         if question in file:
-            with open(os.path.join(path, file), 'r') as f:    message_tmp = json.load(f)
+            with open(os.path.join(json_path, file), 'r') as f:
+                message_tmp = json.load(f)
+    
     message_tmp = message_tmp[list(message_tmp.keys())[0]]
+
 
     # exps
     exp_keys = [k for k in message_tmp.keys() if 'Expectation' in k]
