@@ -1,11 +1,17 @@
 from datetime import datetime
 import random
 import string
+import os
 
 from pymongo import MongoClient
 
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['account']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['account']
+
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['account'] 
 
 def generate_random_string(length):
     letters = string.ascii_letters
