@@ -130,7 +130,8 @@ def process_input(_input = 'As the dimensions get larger, the ratios get closer 
         message=input)
         return 1
 
-    path = os.path.join('/var/www/tutor/app/json')
+    # path = os.path.join('/var/www/tutor/app/json')
+    path = os.path.join(os.getcwd(), 'app', 'json')
     for file in os.listdir(path): 
         if question in file:
             with open(os.path.join(path, file), 'r') as f:    message_tmp = json.load(f)
