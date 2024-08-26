@@ -16,6 +16,9 @@ app.config["MONGO_URI"] = os.environ.get("MONGODB_URI")
 # app.config['MONGO_URI'] = 'mongodb://localhost:27017/tutor_sys'  # Replace with your MongoDB connection URI
 mongo = PyMongo(app)
 
+print(f"Loaded API Key: {os.getenv('OPENAI_API_KEY')}")
+
+
 @app.route('/')
 def home():
     return render_template('./index.html')
