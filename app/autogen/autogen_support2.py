@@ -90,10 +90,17 @@ def summarize_output(question, session_id, user_input, message_tmp, expectation_
     return response_tmp
 
 def closing_output(question, session_id, user_input, expectation_log, _output):
-    path = os.path.join('/var/www/tutor/app/json')
-    for file in os.listdir(path): 
+    # path = os.path.join('/var/www/tutor/app/json')
+    # for file in os.listdir(path): 
+    #     if question in file:
+    #         with open(os.path.join(path, file), 'r') as f:    message_tmp = json.load(f)
+    json_path = os.environ.get('JSON_FILES_PATH', './app/json')
+    
+    for file in os.listdir(json_path): 
         if question in file:
-            with open(os.path.join(path, file), 'r') as f:    message_tmp = json.load(f)
+            with open(os.path.join(json_path, file), 'r') as f:
+                message_tmp = json.load(f)
+                
     message_tmp = message_tmp[list(message_tmp.keys())[0]] # get the main content
     # feedback_tmp = str(random.choice(feedback_dict['PositiveFeedback']))
     
