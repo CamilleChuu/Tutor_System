@@ -1,11 +1,17 @@
 from datetime import datetime
 import random
 import string
+import os
 
 from pymongo import MongoClient
 
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['progress']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['progress']
+
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['progress'] 
 
 question_dict = {
     'Comparing Dimensions': '11',

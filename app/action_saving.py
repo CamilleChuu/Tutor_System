@@ -10,8 +10,13 @@ import openai
 from pymongo import MongoClient
 
 #### envs ####
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['demo']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['demo']
+
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['demo'] 
 
 def action_saving(action_type, action_content, session_id='0'):
     _output.append({"type":'action_log', 'action_type':str(action_type), 'action_content': str(action_content)})

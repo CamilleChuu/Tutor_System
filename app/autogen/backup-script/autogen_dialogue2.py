@@ -28,8 +28,12 @@ from app.autogen.autogen_support import dialogue_output, hint_output
 import argparse
 
 from pymongo import MongoClient
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['demo']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['demo']
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['demo'] 
 
 from app.autogen.autogen import config_list_from_json
 

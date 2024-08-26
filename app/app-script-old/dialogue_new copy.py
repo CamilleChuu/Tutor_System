@@ -27,8 +27,12 @@ from .unreach_retrieve import get_unreach_records
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 key = os.environ["OPENAI_API_KEY"]
 
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['demo']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['demo']
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['demo'] 
 
 def gpt_dialogue(_input = 'As the dimensions get larger, the ratios get closer to 1.', question = 'Comparing Dimensions', session_id='0'):
     path = os.path.join(os.getcwd(), 'app/json')

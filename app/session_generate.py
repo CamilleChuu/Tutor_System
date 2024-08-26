@@ -1,11 +1,16 @@
 import hashlib
 import time
 import random
+import os
 
 from pymongo import MongoClient
 
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['session']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['session']
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['session'] 
 
 def generate_session_id(topic, user, seed=random.randint(1, 10000)):
     current_time = str(int(time.time()))

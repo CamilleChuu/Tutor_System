@@ -8,8 +8,12 @@ from app.autogen.unreach_retrieve import count_unreach_records
 from app.autogen.autogen_support2 import closing_output
 from app.dialogue_open import opening_prompts
 from pymongo import MongoClient
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['demo']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['demo']
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['demo'] 
 
 def get_reached_exp(session_id):
     # prepare the expectation log set

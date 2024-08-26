@@ -16,8 +16,13 @@ from .utils import llm_predict, symbol_control, find_match_in_sentence, timeout
 # from .ckprompt2 import initial_prompt, role_prompt, inchat_prompt, expectation_prompt
 
 #### envs ####
-db = MongoClient('localhost', 27017)['tutor_sys']
-collection = db['demo']
+# db = MongoClient('localhost', 27017)['tutor_sys']
+# collection = db['demo']
+
+mongo_uri = os.getenv('MONGODB_URI')  
+client = MongoClient(mongo_uri)
+db = client['tutor_sys'] 
+collection = db['demo'] 
 
 def opening(question_input='Comparing Dimensions', session_id='0'):
     path = os.path.join(os.getcwd(), 'app/json')
